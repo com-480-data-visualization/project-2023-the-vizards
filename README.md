@@ -138,9 +138,9 @@ We also used the software [Figma](https://www.figma.com/) to create the logo.
 If time permits, we might consider adding a visualization of the whole public transports as a connected graph, such as a force graph, in order to highlight the main edges of public transportation in Lausanne. The goal of this visualization would be to:
 - easily identify the most used edges of the circuit
 - interract with the graph by desactivating edges to see how the connectivity is impacted
-- add the option to change the day of the map, not only the time, in order to be able to compare the day between them. 
-- add an evaluator of the average delay of the transports at each hour, or in the different regions of Lausanne. This could be modeled by a smiley that would become happy or angry.
-- add funny features such as the sound of the TL when opening the website
+
+
+We might add other funny features such as an evaluator of the average delay of the transports modeled by a smiley that would become happy or angry, or even the sound of the TL when opening the website and other guidance throughout the website such as showing the question that is being answered in each tab. 
 
 ### Overview of the website
 Here are some sketches to show an overview of the website, with minimal text:

@@ -143,7 +143,7 @@ If time permits, we might consider adding a visualization of the whole public tr
 - add funny features such as the sound of the TL when opening the website
 
 ### Overview of the website
-Here is an overview of the website, with minimal text:
+Here are some sketches to show an overview of the website, with minimal text:
 
 First tab:
 

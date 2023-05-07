@@ -106,15 +106,15 @@ It is not the case.
 
 ### Introduction
 For this second milestone, the task is to have a first skeleton of the website on public transports in Lausanne, as well as schemes to explain the design of the data visualisations we have chosen.
-We refined the choices of the plots we would like to show on our webstite, being a map of the positions of the buses and stops depending on the time of the day, graphs on the usage of the different transport companies throughout the day, and the same, but measuring their respective delay. We also changed our graphic chart to another one, inspired from the [TL](https://www.t-l.ch/). We created a new logo which is the inverse of the TL logo, see below:
+We have refined the choices of the plots we would like to show on our webstite, i.e a map of the positions of the buses and stops depending on the time of the day, graphs representing the usage of the different transport companies throughout the day, and other ones measuring their respective delay. We also changed our graphic chart to another one, inspired from the [TL](https://www.t-l.ch/). We created a new logo which is the inverse of the TL logo, see below:
 
 <img src="images/LT.png" width="100" height="100">
 
 
-Moreover, we changed the original simple frame of the website to another one, portionized between 4 tabs, all on the same website link:
+Moreover, we changed the original simple frame of the website to another one, portionized between 4 tabs, all these figuring on the same website link:
 - "Home": main map with all transports located at time t of day d, chosen through filters
 - "Network": statistics over a day on transactions, delays and a heatmap on the average delays over a day (chosen through a filter)
-- "Buses": fun page on the championship of which bus line is the latest in average over a day (chosen through a filter), ranking and a histogram of the average delay for the selected bus line
+- "Buses": fun page on the championship of buses: which bus line is the latest in average over a day (chosen through a filter), a ranking and a histogram of the average delay for the selected bus line
 - "About": quick description of the project
 
 The main addition since Milestone 1 is this idea of creating a new "fun" tab with an ironic championship of the bus lines which are the latest.

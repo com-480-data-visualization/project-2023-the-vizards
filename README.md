@@ -9,7 +9,7 @@
 [Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
 
 <p align="center">
-     <a href="https://com-480-data-visualization.github.io/project-2023-the-vizards/"><h6>Website</h6></a>
+     <a href="https://com-480-data-visualization.github.io/project-2023-the-vizards/">Website</a>
 </p>
 
 ## Milestone 1 (23rd April, 5pm)

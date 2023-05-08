@@ -1,38 +1,38 @@
-ligne 1 #ef665e
-ligne 2 #f6af42
-ligne 3 #939599
-ligne 4 #4ca753
-ligne 6 #42afef 
-ligne 7 #2e3192
-ligne 8 #8f53a1
-ligne 9 #b5378f
-ligne 13 #43988e
-ligne 16 #c1b43a
-ligne 17 #ed3833
-ligne 18 #51c8f5
-ligne 19 #3069b3
-ligne 20 #de7735
-ligne 21 #c95789
-ligne 23 #d0a239
-ligne 24 #51a090
-ligne 25 #4f78a8
-ligne 31 #529dba
-ligne 32 #9d85be
-ligne 33 #4c7520
-ligne 35 #f4a240
-ligne 36 #9db5be
-ligne 38 #bb8732
-ligne 41 #b5378f
-ligne 42 #cc8f96
-ligne 45 #3a8d94
-ligne 46 #b49d33
-ligne 47 #cf9c51
-ligne 48 #80a0d3
-ligne 49 #c192c2
-ligne 54 #b9684a
-ligne 56 #1054a6
-ligne 58 #4ebbd1
-ligne 60 #8dc63f
-ligne 64 #c1353c
-ligne 68 #605ea9
-ligne 69 #9c95c9
+1 #ef665e
+2 #f6af42
+3 #939599
+4 #4ca753
+6 #42afef 
+7 #2e3192
+8 #8f53a1
+9 #b5378f
+13 #43988e
+16 #c1b43a
+17 #ed3833
+18 #51c8f5
+19 #3069b3
+20 #de7735
+21 #c95789
+23 #d0a239
+24 #51a090
+25 #4f78a8
+31 #529dba
+32 #9d85be
+33 #4c7520
+35 #f4a240
+36 #9db5be
+38 #bb8732
+41 #b5378f
+42 #cc8f96
+45 #3a8d94
+46 #b49d33
+47 #cf9c51
+48 #80a0d3
+49 #c192c2
+54 #b9684a
+56 #1054a6
+58 #4ebbd1
+60 #8dc63f
+64 #c1353c
+68 #605ea9
+69 #9c95c9

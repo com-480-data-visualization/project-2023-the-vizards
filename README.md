@@ -166,6 +166,14 @@ The forth tab is self-explainatory
 
 **80% of the final grade**
 
+### Process book
+The process book explaining the whole reflection and intended usage of our website can be found on the GitHub, along with the final version of the website.
+
+### Website
+To open the website, go to "Github pages" and "View deploiment".
+
+### Technical setup
+To be able to run the files, you should have the .............. installed.
 
 ## Late policy
 

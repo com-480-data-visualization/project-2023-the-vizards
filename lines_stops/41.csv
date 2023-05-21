@@ -1,0 +1,12 @@
+line_name,stop_id,stop_line_idx,stop_name
+41,8592081,1.5,"Lausanne, Montolieu"
+41,8592018,1.5,"Lausanne, Cigale"
+41,8591977,3.0,"Lausanne, Abeilles"
+41,8591997,4.0,"Lausanne, Boissonnet"
+41,8592099,5.0,"Lausanne, Praz-Berthoud"
+41,8579238,6.0,"Lausanne, Sallaz"
+41,8592118,7.0,"Lausanne, St-Etienne"
+41,8592127,8.0,"Lausanne, Valmont"
+41,8579245,9.0,"Lausanne, Foyer"
+41,8592002,10.0,"Lausanne, Boveresses"
+41,8592101,11.0,"Lausanne, Praz-Séchaud"

@@ -1,0 +1,13 @@
+line_name,stop_id,stop_line_idx,stop_name
+24,8501210,1.0,"Lausanne, Bourdonnette"
+24,8595937,2.0,"Lausanne, sports UNIL-EPFL"
+24,8595939,3.0,"Lausanne, Parc Bourget"
+24,8595934,4.0,"Lausanne, Siège du CIO"
+24,8595935,5.0,"Lausanne, Stade de Coubertin"
+24,8592121,6.5,"Lausanne, Théâtre de Vidy"
+24,8595938,6.5,"Lausanne, Vidy-Port"
+24,8591989,8.0,"Lausanne, Bellerive"
+24,8592090,9.0,"Lausanne, Pêcheurs"
+24,8592086,10.0,"Lausanne, Ouchy-Olympique"
+24,8595933,11.0,"Lausanne, Parc Musée Olympique"
+24,8595936,12.0,"Lausanne, Tour Haldimand-Lac"

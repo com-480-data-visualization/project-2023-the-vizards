@@ -1,0 +1,83 @@
+html,
+body {
+    background-color: #005198;
+    min-height: 100vh;
+}
+
+h5 {
+    color: white;
+}
+
+h1 {
+    font-family: 'Trebuchet MS';
+    /* OR font-family: 'Baloo' OR "Rowdies", cursive;*/
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    font-family: 'Arial';
+    font-weight: 50;
+    font-size: 1rem;
+    color: lightsteelblue;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Arial';
+    font-weight: 50;
+    font-size: 1rem;
+    color: #005198;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: rgb(84, 141, 216);
+}
+
+.nav-pills .nav-link {
+    color: #005198;
+    background-color: white;
+    margin: 5px;
+}
+
+.nav-pills .nav-link.active {
+    color: white;
+    background-color: #005198;
+}
+
+
+
+.ticks {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+}
+
+.tick {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1px;
+    background: white;
+    color: white;
+
+    height: 10px;
+    line-height: 40px;
+    margin-bottom: 20px
+}
+
+.ui-datepicker {
+    width: 100%;
+}

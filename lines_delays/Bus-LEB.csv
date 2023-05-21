@@ -1,0 +1,20 @@
+stop_id,day_of_week,arrival_delay,departure_delay,stop_name
+8501165,0,42.0,42.0,Jouxtens-Mézery
+8501165,6,19.0,38.0,Jouxtens-Mézery
+8501168,0,36.0,36.0,Vernand-Camarès
+8501168,6,60.0,60.0,Vernand-Camarès
+8501170,0,18.0,18.0,Bel-Air LEB
+8501170,6,69.0,69.0,Bel-Air LEB
+8507628,0,34.0,34.0,"Romanel-sur-Lausanne, gare"
+8507628,6,41.0,66.0,"Romanel-sur-Lausanne, gare"
+8592001,6,0.0,0.0,"Lausanne, Boston"
+8592010,0,0.0,0.0,"Lausanne, Chauderon"
+8592010,6,32.0,81.0,"Lausanne, Chauderon"
+8592050,0,0.0,0.0,"Lausanne, gare"
+8592050,6,0.0,35.0,"Lausanne, gare"
+8592175,0,0.0,0.0,"Prilly, Chasseur"
+8592175,6,50.0,51.0,"Prilly, Chasseur"
+8592181,0,42.0,42.0,"Prilly, Huttins"
+8592181,6,51.0,85.0,"Prilly, Huttins"
+8593849,0,0.0,0.0,"Cery-Fleur-de-Lys, gare"
+8593849,6,21.0,21.0,"Cery-Fleur-de-Lys, gare"

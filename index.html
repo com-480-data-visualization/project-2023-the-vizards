@@ -9,106 +9,14 @@
 <meta name="author" content="Antonin Faure">
 <meta name="author" content="Lena Vogel">
 <meta name="author" content="Salma Ed-dahabi">
-<style type="text/css">
-  html,
-  body {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-  }
 
-  .container {
-    width: 100%;
-    height: 100%
-  }
-
-  #logo {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    z-index: 1000;
-    width: 80px;
-    height: 80px;
-  }
-
-  #overlay {
-    position: absolute;
-    top: 100px;
-    /* Top margin */
-    bottom: 100px;
-    /* Bottom margin */
-    right: 100px;
-    width: 30%;
-    background-color: rgba(255, 255, 255, 0.95);
-    z-index: 1000;
-    padding: 60px;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding-bottom: 100px;
-  }
-
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-  }
-
-  #sections {
-    overflow-y: auto;
-    height: 100%;
-    width: 100%;
-  }
-
-  .section {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  .section.active {
-    opacity: 1;
-  }
-
-
-  #controls {
-    position: absolute;
-    bottom: 30px;
-  }
-
-  #controls button {
-    background-color: #008CBA;
-    /* Blue background */
-    border: none;
-    /* Remove border */
-    color: white;
-    /* White text */
-    padding: 15px 32px;
-    /* Padding to make the button bigger */
-    text-align: center;
-    /* Center the text */
-    text-decoration: none;
-    /* Remove underline */
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    /* Add a hand cursor on hover */
-    transition: background-color 0.3s ease;
-    /* Add transition effect */
-  }
-
-  #controls button:hover {
-    background-color: #007B9A;
-    /* Change background color on hover */
-  }
-</style>
 <link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
+<link rel="stylesheet" href="static/assets/style.css">
+
+<script type="text/javascript" src="https://unpkg.com/three@0.138.0/build/three.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/maptalks.three/dist/maptalks.three.js"></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700" rel="stylesheet">
@@ -118,6 +26,7 @@
   <div id="map" class="container"></div>
   <div id="overlay">
     <div id="sections">
+      <!-- SECTION 1 -->
       <div id="section1" class="section">
         <h2>Welcome to Lausanne Transportation</h2>
         <p>Welcome to our journey through the transportation network of Lausanne. A city that thrives on connectivity,
@@ -142,6 +51,8 @@
           your understanding and appreciation of Lausanne's transportation network. So, let's embark on this journey
           together and discover what makes this city move!</p>
       </div>
+
+      <!-- SECTION 2 -->
       <div id="section2" class="section">
         <h2>The Lines: Connecting Points and People</h2>
         <p>Each line on the map is more than just a route - it's a connection between places, people, and stories.
@@ -150,11 +61,90 @@
           to tell.</p>
 
         <p>In this section, we delve into the specifics of the lines. From the busiest routes serving the heart of
-          Lausanne to the less frequented ones connecting the outskirts, each line has its unique traits and importance.
+          Lausanne to the less frequented ones connecting the outskirts, each line has its unique traits and
+          importance.
           Explore the details and understand how they come together to form the intricate network that keeps Lausanne
           moving.</p>
+
+        <div class="slider-container">
+          <label for="daySelect">Day:</label>
+          <input type="range" min="0" max="6" step="1" id="daySelect">
+          <div id="daySelectLabels" class="slider-labels">
+            <span>Monday</span>
+            <span>Tuesday</span>
+            <span>Wednesday</span>
+            <span>Thursday</span>
+            <span>Friday</span>
+            <span>Saturday</span>
+            <span>Sunday</span>
+          </div>
+        </div>
+
+        <div class="select-container">
+          <label for="lineSelect">Line:</label>
+          <select id="lineSelect"></select>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <span style="background-color: red; color: white; padding: 10px;">Median Arrival Delay</span>
+          <span style="background-color: blue; color: white; padding: 10px;">Median Departure Delay</span>
+        </div>
       </div>
+
+      <!-- SECTION 3 -->
       <div id="section3" class="section">
+        <h2>The Lines: Connecting Points and People</h2>
+        <p>Each line on the map is more than just a route - it's a connection between places, people, and stories.
+          Whether they're taking students to school, employees to work, or families to the park, each line has countless
+          stories to tell.</p>
+
+        <p>In this section, we delve into the specifics of the lines. From the busiest routes serving the heart of
+          Lausanne to the less frequented ones connecting the outskirts, each line has its unique traits and
+          importance.
+          Explore the details and understand how they come together to form the intricate network that keeps Lausanne
+          moving.</p>
+
+
+
+        <div>
+          <div class="slider-container">
+            <label for="daySelect-2">Day:</label>
+            <input type="range" min="0" max="6" step="1" id="daySelect-2">
+            <div class="slider-labels">
+              <span>Monday</span>
+              <span>Tuesday</span>
+              <span>Wednesday</span>
+              <span>Thursday</span>
+              <span>Friday</span>
+              <span>Saturday</span>
+              <span>Sunday</span>
+            </div>
+          </div>
+
+          <label for="sortSelect">Sort By:</label>
+          <select id="sortSelect">
+            <option value="arrival_delay_rank">Median Arrival Delay</option>
+            <option value="departure_delay_rank">Median Departure Delay</option>
+          </select>
+
+          <table id="championshipTable">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Line</th>
+                <th>Median Arrival Delay (sec)</th>
+                <th>Median Departure Delay (sec)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+
+      </div>
+
+      <!-- SECTION 4 -->
+      <div id="section4" class="section">
         <h2>The Stops: Where Journeys Begin and End</h2>
         <p>The heart of any transportation system lies in its stops - the places where journeys begin and end. They are
           the nodes that bind the network together, places where people gather, wait, meet, and part ways.</p>
@@ -164,17 +154,6 @@
           activity to the quiet stops nestled in the neighborhoods, each has a character of its own. Learn about their
           significance and how they contribute to the overall functioning of the system.</p>
       </div>
-      <div id="section4" class="section">
-        <h2>The Future: Towards a Sustainable Lausanne</h2>
-        <p>As we look towards the future, sustainable and efficient public transportation becomes more important than
-          ever. Lausanne is committed to enhancing its network to meet the evolving needs of its residents and
-          contribute
-          to a greener future.</p>
-
-        <p>In this final section, we discuss the future plans for Lausanne's transportation system. From expanding
-          existing lines to introducing innovative modes of transport, the city is constantly evolving its network.
-          Discover what lies ahead and how it will shape the future of mobility in Lausanne.</p>
-      </div>
     </div>
     <div id="controls">
       <button id="prevButton">Previous</button>
@@ -183,7 +162,10 @@
 
   </div>
 
+  <script src="static/assets/utils.js"></script>
+  <script src="static/assets/sections.js"></script>
   <script>
+
     var map = new maptalks.Map('map', {
       center: [6.6736, 46.5409],
       zoom: 13,
@@ -196,90 +178,81 @@
       })
     });
 
+    var threeLayer = new maptalks.ThreeLayer('t');
+    threeLayer.prepareToDraw = function (gl, scene, camera) {
+      var light = new THREE.DirectionalLight(0xffffff);
+      light.position.set(0, -10, 10).normalize();
+      scene.add(light);
+      scene.add(new THREE.AmbientLight('#fff', 0.5));
 
-    fetch('final_lines.geojson').then(function (res) {
-      return res.json();
-    }).then(function (data) {
-      var geojson = data;
-      var lines = []
-      geojson.features.forEach(function (feature, i) {
-        if (feature.geometry.type === 'LineString') {
-          var line = new maptalks.LineString(feature.geometry.coordinates, {
-            symbol: {
-              'lineColor': feature.properties.color,
-              'lineWidth': 3
-            }
+      loadLines().then(function (data) {
+        const linesMesh = data.linesMesh;
+        const displayableLines = data.displayableLines;
+
+        loadDelays().then(function (data) {
+          const delaysMesh = data.delaysMesh;
+          const linesWithDelays = data.linesWithDelays;
+
+          const optionsLines = createLineSelect(displayableLines, linesWithDelays);
+
+          const lineSelect = document.getElementById('lineSelect');
+          const daySelect = document.getElementById('daySelect');
+
+          lineSelect.addEventListener('change', function () {
+            updateVisibilityLine(linesMesh, delaysMesh)
+            var selectedOption = this.options[this.selectedIndex];
+            this.style.backgroundColor = selectedOption.style.backgroundColor;
           });
-        } else if (feature.geometry.type === 'MultiLineString') {
-          var line = new maptalks.MultiLineString(feature.geometry.coordinates, {
-            symbol: {
-              'lineColor': feature.properties.color,
-              'lineWidth': 3
-            }
+          daySelect.addEventListener('input', function () {
+            updateVisibilityLine(linesMesh, delaysMesh)
           });
-        }
-        lines.push(line);
-        var name = `line-${feature.properties.line}`
-        //new maptalks.VectorLayer(name, line).addTo(map);
+
+          loadChampionship(linesMesh, optionsLines).then(function () {
+
+            createSectionsController(linesMesh, delaysMesh, optionsLines);
+          })
+        })
       });
-      new maptalks.VectorLayer(name, lines).addTo(map);
+
+    };
+
+    map.addLayer(threeLayer);
+
+
+    // TOOL TIP //
+    let tooltip = document.createElement('div');
+    tooltip.id = 'tooltip';
+    tooltip.style.position = 'absolute';
+    tooltip.style.backgroundColor = 'white';
+    tooltip.style.border = '1px solid black';
+    tooltip.style.padding = '5px';
+    tooltip.style.display = 'none'; // Hide the tooltip by default
+    document.body.appendChild(tooltip);
+
+    map.on('mousemove', function (e) {
+      let intersected = threeLayer.identify(e.coordinate);
+      if (intersected && intersected.length > 0) {
+        let delayValue = intersected[0].options.delay; // replace with actual method to retrieve delay value
+        if (delayValue) {
+          // Show and update tooltip
+          tooltip.style.display = 'block';
+          tooltip.innerHTML = 'Median Delay: ' + delayValue + 's';
+          tooltip.style.left = e.containerPoint.x + 'px';
+          tooltip.style.top = e.containerPoint.y + 'px';
+        } else {
+          tooltip.style.display = 'none';
+        }
+      } else {
+        // Hide tooltip if not hovering over a mesh
+        tooltip.style.display = 'none';
+      }
     });
+
   </script>
 
+
   <script>
-    var sections = document.querySelectorAll(".section");
-    var nextButton = document.getElementById("nextButton");
-    var prevButton = document.getElementById("prevButton");
-    var currentSection = 0;
 
-    function updateSections() {
-      sections.forEach((section, index) => {
-        if (index === currentSection) {
-          activateSection(section);
-          section.classList.add("active");
-        } else {
-          deactivateSection(section);
-          section.classList.remove("active");
-        }
-      });
-    }
-
-    // Function to deactivate a section
-    function deactivateSection(section) {
-      // First fade out the section
-      section.style.opacity = '0';
-
-      // Then, after the transition is complete, set display to 'none'
-      setTimeout(function () {
-        section.style.display = 'none';
-      }, 500);  // The timeout should match the transition duration
-    }
-
-    // Function to activate a section
-    function activateSection(section) {
-      // First set display to 'block', then fade in the section
-      section.style.display = 'block';
-
-      // We use setTimeout to ensure that the change in display is finished before we start the fade in
-      setTimeout(function () {
-        section.style.opacity = '1';
-      }, 0);
-    }
-
-
-    nextButton.addEventListener("click", function () {
-      if (currentSection === sections.length - 1) return;
-      currentSection = currentSection + 1;
-      updateSections();
-    });
-
-    prevButton.addEventListener("click", function () {
-      if (currentSection === 0) return;
-      currentSection = currentSection - 1;
-      updateSections();
-    });
-
-    updateSections();
 
   </script>
 </body>

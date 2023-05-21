@@ -2,6 +2,7 @@
 data/timetables.csv
 
 data/raw
+lines/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -306,6 +306,7 @@ function highlightLine(linesMesh, lineName) {
     linesMesh[lineName].forEach(function (mesh) {
         centerOnLine(mesh)
         mesh.object3d.position.z = 1
+        console.log(mesh)
     });
 }
 
@@ -383,13 +384,16 @@ function centerOnLine(lineMesh) {
     avgLat /= vertices.length;
     avgLng /= vertices.length;
 
-    // Calculate the width of the overlay in degrees
-    var windowWidth = window.innerWidth;
-    var overlayWidth = document.getElementById('overlay').offsetWidth + 200;
-    var overlayWidthInDegree = overlayWidth * (maxLng - minLng) / (windowWidth - overlayWidth);
+    // If overlay on the side, add additional space on the side
+    if (window.innerWidth > 800) {
+        // Calculate the width of the overlay in degrees
+        var windowWidth = window.innerWidth;
+        var overlayWidth = document.getElementById('overlay').offsetWidth + 200;
+        var overlayWidthInDegree = overlayWidth * (maxLng - minLng) / (windowWidth - overlayWidth);
 
-    // Adjust maximum longitude to include additional space on the side
-    maxLng += overlayWidthInDegree;
+        // Adjust maximum longitude to include additional space on the side
+        maxLng += overlayWidthInDegree;
+    }
 
     // Center the map on the calculated coordinates
     map.fitExtent(new maptalks.Extent(minLng, minLat, maxLng, maxLat))
@@ -397,7 +401,8 @@ function centerOnLine(lineMesh) {
 }
 
 function centerGlobal() {
-    const center = [6.6736, 46.5409]
+    
+    const center = window.innerWidth > 800 ? [6.6736, 46.5409] : [6.6322, 46.5192]
     const zoom = 13
     const pitch = 40
     const bearing = 0

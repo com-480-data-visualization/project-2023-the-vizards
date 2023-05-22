@@ -12,6 +12,7 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
                 hideAllDelay(delaysMesh);
                 centerGlobal();
                 showSection(0)
+                hideButton(prevButton);
                 break;
             case 1:
                 hideAllLines(linesMesh);
@@ -19,18 +20,21 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
                 unhighlightChampionship(optionsLines)
                 updateVisibilityLine(linesMesh, delaysMesh);
                 showSection(1)
+                showButton(prevButton);
                 break;
             case 2:
                 showAllLines(linesMesh);
                 hideAllDelay(delaysMesh);
                 centerGlobal();
                 showSection(2)
+                showButton(nextButton);
                 break;
             case 3:
                 centerGlobal();
                 handleHighlight(linesMesh, undefined);
                 unhighlightChampionship(optionsLines)
                 showSection(3)
+                hideButton(nextButton);
                 break;
             default:
                 break;
@@ -87,18 +91,10 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
     updateSections(linesMesh, delaysMesh);
 }
 
-function showMap() {
-
+function showButton(element) {
+    element.disabled  = false;
 }
 
-function hideMap() {
-
-}
-
-function showNetwork() {
-
-}
-
-function hideNetwork() {
-
+function hideButton(element) {
+    element.disabled  = true;
 }

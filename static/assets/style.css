@@ -23,9 +23,7 @@ body {
 #overlay {
     position: absolute;
     top: 100px;
-    /* Top margin */
     bottom: 100px;
-    /* Bottom margin */
     right: 100px;
     width: 30%;
     background-color: rgba(255, 255, 255, 0.95);
@@ -35,6 +33,23 @@ body {
     box-sizing: border-box;
     padding-bottom: 100px;
 }
+
+@media screen and (max-width: 800px) {
+    #overlay {
+        display: block;
+        position: relative;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+    }
+
+    #map {
+        max-height: 60%;
+    }
+}
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -66,12 +81,17 @@ h2 {
 #controls {
     position: absolute;
     bottom: 30px;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#controls button {
-    background-color: #008CBA;
+#controls button.control-button {
+    background-color: #005198;
     /* Blue background */
     border: none;
+    border-radius: 15px;
     /* Remove border */
     color: white;
     /* White text */
@@ -83,15 +103,22 @@ h2 {
     /* Remove underline */
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 10px 10px;
+    opacity: 1;
     cursor: pointer;
     /* Add a hand cursor on hover */
     transition: background-color 0.3s ease;
     /* Add transition effect */
 }
 
-#controls button:hover {
-    background-color: #007B9A;
+#controls button.control-button:disabled {
+    opacity: 0;
+    cursor: default;
+    /* Change background color on hover */
+}
+
+#controls button.control-button:hover {
+    background-color: #003f75;
     /* Change background color on hover */
 }
 
@@ -152,7 +179,10 @@ h2 {
 }
 
 .slider-container input[type=range] {
-    width: 100%;
+    position: absolute;
+    left: 20px;
+    right: 5px;
+    bottom: 2em;
 }
 
 .slider-container .slider-labels {
@@ -176,7 +206,7 @@ h2 {
     position: relative;
     justify-content: center;
 }
-
+/*
 .slider-labels span::before {
     content: '';
     position: absolute;
@@ -186,7 +216,7 @@ h2 {
     width: 1px;
     height: 10px;
     background: black;
-}
+}*/
 
 #championshipTable {
     width: 100%;

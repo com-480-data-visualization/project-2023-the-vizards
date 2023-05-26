@@ -71,6 +71,8 @@ We have plotted graphs, with the public transport stops distribution, depending 
 ![plot](images/map_stops.png)
 ![plot](images/altitude_per_stops.png)
 ![plot](images/stops_per_company.png)
+![plot](images/transactions_per_hour2.png)
+
 
 We have also plotted the delays during a period of 24hours for each transport company, and the number of transactions per day.
 

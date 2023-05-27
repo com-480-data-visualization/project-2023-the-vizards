@@ -6,10 +6,10 @@ var currentSection = 0;
 function createSectionsController(linesMesh, delaysMesh, optionsLines) {
     function openDoors() {
         var leftDoor = new Image();
-        leftDoor.src = "../../images/left_door.png";
+        leftDoor.src = "/../../images/left_door.png";
       
         var rightDoor = new Image();
-        rightDoor.src = "../../images/right_door.png";
+        rightDoor.src = "/../../images/right_door.png";
       
         var canvas = document.getElementById("canvas");
         var context = canvas.getContext("2d");
@@ -18,7 +18,7 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
         var doorWidth = leftDoor.width;
         var doorHeight = leftDoor.height;
       
-        var doorOpenIncrement = 5; // Increase this value to make the doors open faster
+        var doorOpenIncrement = 1; // Increase this value to make the doors open faster
       
         var leftDoorX = centerX - doorWidth;
         var rightDoorX = centerX;
@@ -42,8 +42,9 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
           }
         }, 100); // Adjust the interval (in milliseconds) to control the animation speed
     }
-      
 
+    openDoors();
+      
     function updateSections(linesMesh, delaysMesh) {
         switch (currentSection) {
             case 0:
@@ -113,7 +114,6 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
             section.style.display = 'block';
         }, 500);
     }
-
 
     nextButton.addEventListener("click", function () {
         if (currentSection === sections.length - 1) return;

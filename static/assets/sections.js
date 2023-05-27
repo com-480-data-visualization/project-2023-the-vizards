@@ -42,8 +42,6 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
           }
         }, 100); // Adjust the interval (in milliseconds) to control the animation speed
     }
-
-    openDoors();
       
     function updateSections(linesMesh, delaysMesh) {
         switch (currentSection) {

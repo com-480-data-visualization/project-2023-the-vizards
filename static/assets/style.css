@@ -15,7 +15,7 @@ body {
     position: absolute;
     top: 25px;
     left: 25px;
-    z-index: 1000;
+    z-index: 10;
     width: 80px;
     height: 80px;
 }
@@ -27,7 +27,7 @@ body {
     right: 100px;
     width: 30%;
     background-color: rgba(255, 255, 255, 0.95);
-    z-index: 1000;
+    z-index: 10;
     padding: 60px;
     overflow: hidden;
     box-sizing: border-box;
@@ -206,6 +206,7 @@ h2 {
     position: relative;
     justify-content: center;
 }
+
 /*
 .slider-labels span::before {
     content: '';
@@ -251,5 +252,54 @@ h2 {
 
 
 #championshipTable tr.disabled {
-    cursor: default ;
+    cursor: default;
+}
+
+.door {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    z-index: 20;
+    transition: transform 2s;
+    top: 0;
+}
+
+.door-left {
+    left: 0;
+    background: url('../images/left_door.png') no-repeat right center;
+    background-size: auto 100%;
+}
+
+.door-right {
+    right: 0;
+    background: url('../images/right_door.png') no-repeat left center;
+    background-size: auto 100%;
+}
+
+.door-left.open {
+    animation: slideLeft 2s forwards;
+}
+
+.door-right.open {
+    animation: slideRight 2s forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
 }

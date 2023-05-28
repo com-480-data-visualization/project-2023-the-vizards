@@ -6,42 +6,9 @@ var currentSection = 0;
 
 function createSectionsController(linesMesh, delaysMesh, optionsLines) {
     function openDoors() {
-        var leftDoor = new Image();
-        leftDoor.src = "/../../images/left_door.png";
-      
-        var rightDoor = new Image();
-        rightDoor.src = "/../../images/right_door.png";
-      
-        var canvas = document.getElementById("canvas");
-        var context = canvas.getContext("2d");
-      
-        var centerX = canvas.width / 2;
-        var doorWidth = leftDoor.width;
-        var doorHeight = leftDoor.height;
-      
-        var doorOpenIncrement = 1; // Increase this value to make the doors open faster
-      
-        var leftDoorX = centerX - doorWidth;
-        var rightDoorX = centerX;
-      
-        var interval = setInterval(function () {
-          context.clearRect(0, 0, canvas.width, canvas.height);
-      
-          // Draw the left door
-          context.drawImage(leftDoor, leftDoorX, (canvas.height - doorHeight) / 2, doorWidth, doorHeight);
-      
-          // Draw the right door
-          context.drawImage(rightDoor, rightDoorX, (canvas.height - doorHeight) / 2, doorWidth, doorHeight);
-      
-          // Adjust the door positions for opening effect
-          leftDoorX -= doorOpenIncrement;
-          rightDoorX += doorOpenIncrement;
-      
-          if (leftDoorX + doorWidth < centerX && rightDoorX > centerX) {
-            clearInterval(interval);
-            console.log("Doors opened!");
-          }
-        }, 100); // Adjust the interval (in milliseconds) to control the animation speed
+        document.querySelectorAll(".door").forEach((door) => {
+            door.classList.add("open");
+        });
     }
     
     function updateSections(linesMesh, delaysMesh) {
@@ -128,6 +95,8 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
     });
 
     updateSections(linesMesh, delaysMesh);
+
+    openDoors();
 }
 
 function showButton(element) {

@@ -112,12 +112,12 @@
             <input type="range" min="0" max="6" step="1" id="daySelect-2" list="slider-labels-2">
             <div id="slider-labels-2" class="slider-labels">
               <span>Mon</span>
-            <span>Tue</span>
-            <span>Wed</span>
-            <span>Thu</span>
-            <span>Fri</span>
-            <span>Sat</span>
-            <span>Sun</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
             </div>
           </div>
 
@@ -156,11 +156,13 @@
       </div>
     </div>
     <div id="controls">
-        <button id="prevButton" class="control-button" disabled>Previous</button>
-        <button id="nextButton" class="control-button">Next</button>
+      <button id="prevButton" class="control-button" disabled>Previous</button>
+      <button id="nextButton" class="control-button">Next</button>
     </div>
-
   </div>
+
+  <div class="door door-left"></div>
+  <div class="door door-right"></div>
 
   <script src="static/assets/utils.js"></script>
   <script src="static/assets/sections.js"></script>
@@ -210,6 +212,7 @@
           loadChampionship(linesMesh, optionsLines).then(function () {
 
             createSectionsController(linesMesh, delaysMesh, optionsLines);
+
           })
         })
       });
@@ -247,16 +250,6 @@
         tooltip.style.display = 'none';
       }
     });
-
-    // OPEN DOORS //
-    // window.addEventListener('load', openDoors());
-
-  </script>
-
-
-  <script>
-
-
   </script>
 </body>
 

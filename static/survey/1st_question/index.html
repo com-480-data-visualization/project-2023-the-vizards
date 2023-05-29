@@ -26,10 +26,8 @@ new Chart("myChart", {
     onComplete: function () {
         // render the value of the chart above the bar
         var ctx = this.chart.ctx;
-        //Chart.defaults.global.defaultFontSize
         ctx.font = Chart.helpers.fontString(14, 'normal', Chart.defaults.global.defaultFontFamily);
         ctx.fillStyle = '#000000'
-        //this.chart.config.options.defaultFontColor;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'bottom';
         this.data.datasets.forEach(function (dataset) {
@@ -49,22 +47,14 @@ new Chart("myChart", {
     
   scales:{
      x: {
-        ticks: {
-                font: {
-                    size: 130,
-                }
-            },
+       
         grid:{
               offset: true}
        
      },
     yValues: {
         beginAtZero: true,
-        min: 0,
-        max:60,
-        
-      
-    }
+      }
     },
     legend: {display: false},
     title: {

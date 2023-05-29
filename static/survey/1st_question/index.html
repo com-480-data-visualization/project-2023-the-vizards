@@ -24,7 +24,6 @@ new Chart("myChart", {
    animation: {
     duration: 0,
     onComplete: function () {
-        // render the value of the chart above the bar
         var ctx = this.chart.ctx;
         ctx.font = Chart.helpers.fontString(14, 'normal', Chart.defaults.global.defaultFontFamily);
         ctx.fillStyle = '#000000'

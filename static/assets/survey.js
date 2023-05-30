@@ -159,7 +159,7 @@ new Chart("myChart3", {
                         else if (dataset.data[i] == 18.7) {
                             ctx.fillText(dataset.data[i] + "%", model.x - 45, model.y + 9)
                         }
-                        else { ctx.fillText(dataset.data[i] + "%", model.x - 35, model.y + 9) };
+                        else { ctx.fillText(dataset.data[i] + "%", model.x - 15, model.y + 9) };
                     }
                 });
             }

@@ -28,13 +28,13 @@ new Chart("myChart1", {
                     for (var i = 0; i < dataset.data.length; i++) {
                         var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
                         if (dataset.data[i] == 49.3) {
-                            ctx.fillText(dataset.data[i] + "%", model.x - 50, model.y + 9)
+                            ctx.fillText(dataset.data[i] + "%", model.x - 45, model.y + 9)
                         }
                         else if (dataset.data[i] == 0.7) {
                             ctx.fillText(dataset.data[i] + "%", model.x + 20, model.y + 9)
                         }
 
-                        else { ctx.fillText(dataset.data[i] + "%", model.x - 16, model.y + 9) };
+                        else { ctx.fillText(dataset.data[i] + "%", model.x - 15, model.y + 9) };
                     }
                 });
             }
@@ -89,13 +89,13 @@ new Chart("myChart2", {
                     for (var i = 0; i < dataset.data.length; i++) {
                         var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
                         if (dataset.data[i] == 41.3) {
-                            ctx.fillText(dataset.data[i] + "%", model.x - 50, model.y + 9)
+                            ctx.fillText(dataset.data[i] + "%", model.x - 45, model.y + 9)
                         }
                         else if (dataset.data[i] == 0.7) {
                             ctx.fillText(dataset.data[i] + "%", model.x + 20, model.y + 9)
                         }
 
-                        else { ctx.fillText(dataset.data[i] + "%", model.x - 16, model.y + 9) };
+                        else { ctx.fillText(dataset.data[i] + "%", model.x - 15, model.y + 9) };
                     }
                 });
             }

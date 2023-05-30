@@ -151,7 +151,7 @@ new Chart("myChart3", {
                     for (var i = 0; i < dataset.data.length; i++) {
                         var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
                         if (dataset.data[i] == 38.7) {
-                            ctx.fillText(dataset.data[i] + "%", model.x - 20, model.y + 9)
+                            ctx.fillText(dataset.data[i] + "%", model.x - 50, model.y + 9)
                         }
                         else if (dataset.data[i] == 0.7) {
                             ctx.fillText(dataset.data[i] + "%", model.x + 20, model.y + 9)

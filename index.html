@@ -35,28 +35,26 @@
         <!-- SECTION 1 -->
         <div id="section1" class="section">
           <h2>Welcome to Lausanne Transportation</h2>
-          <p>Welcome to our journey through the transportation network of Lausanne. A city that thrives on connectivity,
-            Lausanne boasts a diverse and efficient public transport system. Whether you're a resident or a visitor,
-            understanding the city's transportation can greatly enhance your experience of Lausanne.</p>
-
+          <p>Welcome to our journey through the transportation network of Lausanne. As you embark on this interactive
+            exploration, you'll discover the dynamic and interconnected web that keeps Lausanne moving.</p>
           <h3>The Network Map</h3>
-          <p>Our journey begins with an overview of the entire transportation network. Each line you see on the map
-            represents a vital route that connects various parts of the city. These lines are the veins of Lausanne,
-            pulsating with buses and metros, carrying commuters to and from their destinations.</p>
-
-          <p>From the bustling city center to the serene outskirts, these lines represent the city's commitment to
-            accessibility and sustainability. They serve as a testament to Lausanne's dedication to providing efficient
-            and
-            convenient public transportation.</p>
-
-          <p>Explore the map, take note of the different routes, and get ready to dive deeper into the specifics of
-            Lausanne's transportation system in the upcoming sections. We will uncover the details of different lines,
-            the
-            history behind them, and their impact on the city's life and growth.</p>
-
-          <p>Whether you're a daily commuter, an urban explorer, or a curious learner, we hope this exploration enhances
-            your understanding and appreciation of Lausanne's transportation network. So, let's embark on this journey
-            together and discover what makes this city move!</p>
+          <p>Behold the mesmerizing sight of Lausanne's transportation network spread before you. In this 3D map, every
+            line represents a vital artery that courses through the city, connecting neighborhoods, institutions, and
+            communities. Watch as buses and metros traverse the lines, bringing life and energy to the city's streets.
+          </p>
+          <p>Lausanne's commitment to accessibility and sustainability is evident in the intricate network of lines that
+            reach from the bustling city center to the tranquil outskirts. This transportation system is the lifeblood
+            that fuels the city's growth and fosters seamless connectivity for residents and visitors alike.</p>
+          <p>As you explore the map, take note of the different routes and lines that crisscross Lausanne. Each line has
+            its own story, its own purpose in serving the people who rely on it daily. From the students heading to
+            school, to the employees commuting to work, to the families on their way to the park - these lines are the
+            threads that weave together the fabric of Lausanne's vibrant transportation network.</p>
+          <p>Whether you are a daily commuter, an urban explorer, or simply a curious learner, we invite you to join us
+            on this journey of discovery. Gain a deeper understanding and appreciation for the transportation network
+            that keeps Lausanne in motion. Let's dive into the specifics of different lines, uncover their history, and
+            explore their impact on the city's life and growth.</p>
+          <p>Get ready to witness the magic of Lausanne's transportation network unfold before your eyes. Let us embark
+            on this fascinating journey together and discover what makes this city move!</p>
         </div>
 
 
@@ -64,16 +62,20 @@
         <!-- SECTION 2 -->
         <div id="section2" class="section">
           <h2>The Lines: Connecting Points and People</h2>
-          <p>Each line on the map is more than just a route - it's a connection between places, people, and stories.
-            Whether they're taking students to school, employees to work, or families to the park, each line has
-            countless
-            stories to tell.</p>
+          <p>Every line in Lausanne's transportation system has its own story and performance. In this section, we
+            present a unique opportunity to discover the top-performing lines through an exciting championship-style
+            ranking.</p>
 
-          <p>In this section, we delve into the specifics of the lines. From the busiest routes serving the heart of
-            Lausanne to the less frequented ones connecting the outskirts, each line has its unique traits and
-            importance.
-            Explore the details and understand how they come together to form the intricate network that keeps Lausanne
-            moving.</p>
+          <h3>Interactive Line Performance Ranking</h3>
+
+          <p>The ranking table provides an overview of the top-performing lines based on mean arrival and departure
+            delays. Each line is assigned a rank, allowing you to easily identify the best-performing lines for the
+            selected day.</p>
+          <p>But the competition doesn't end there! By clicking on a row corresponding to a line in the table, the
+            selected line will be highlighted on the 3D map. Visualize the routes and visualize the champions in action!
+          </p>
+          <p>Embark on this journey of line performance exploration and discover which lines come out on top in
+            Lausanne's transportation system. Will your favorite line take the crown? Let the competition begin!</p>
 
 
 
@@ -116,19 +118,22 @@
 
         <!-- SECTION 3 -->
         <div id="section3" class="section">
-          <h2>The Lines: Connecting Points and People</h2>
-          <p>Each line on the map is more than just a route - it's a connection between places, people, and stories.
-            Whether
-            they're taking students to school, employees to work, or families to the park, each line has countless
-            stories
-            to tell.</p>
+          <h2>Exploring Line Performance: Delays and Stops</h2>
+          <p>Each line on the transportation map represents a vital connection between places, people, and stories. In
+            this section, we dive deeper into the performance of specific lines in Lausanne's transportation system. By
+            analyzing the median arrival and departure delays at each stop along the selected line, we gain insights
+            into its punctuality and efficiency.</p>
 
-          <p>In this section, we delve into the specifics of the lines. From the busiest routes serving the heart of
-            Lausanne to the less frequented ones connecting the outskirts, each line has its unique traits and
-            importance.
-            Explore the details and understand how they come together to form the intricate network that keeps Lausanne
-            moving.</p>
+          <p>By exploring the line performance through this interactive visualization, you can gain insights into the
+            punctuality and reliability of specific lines in Lausanne's transportation system. Discover how delays vary
+            at different stops, identify potential bottlenecks, and make informed decisions about your travel routes
+            within the city.</p>
 
+          <h3>Interactive Line Visualization</h3>
+          <p>Using our interactive 3D map, you can select a specific day of the week and choose a line from the dropdown
+            menu. The map will display the selected line with its associated stops, represented as a 3D histogram. The
+            height of each histogram bar corresponds to the median arrival and departure delays at that particular stop.
+          </p>
           <div class="slider-container">
             <label for="daySelect">Day:</label>
             <input type="range" min="0" max="6" step="1" id="daySelect">
@@ -148,20 +153,33 @@
             <select id="lineSelect"></select>
           </div>
 
+          <p>Additionally, you can find below a bar plot that provides a summarized view of the
+            median arrival and departure delays for each stop in order along the selected line. This plot allows for a
+            quick
+            comparison of delays across different stops, providing a comprehensive overview of the line's performance.
+          </p>
           <div id="line-delays-plot" style="width: 50%;"></div>
+
+
         </div>
 
         <!-- SECTION 4 -->
         <div id="section4" class="section">
           <h2>The Stops: Where Journeys Begin and End</h2>
           <p>The heart of any transportation system lies in its stops - the places where journeys begin and end. They
-            are
-            the nodes that bind the network together, places where people gather, wait, meet, and part ways.</p>
+            are the nodes that bind the network together, serving as vital connection points for commuters and
+            travelers. In Lausanne, these stops are vibrant hubs of activity, facilitating smooth and efficient movement
+            across the city.</p>
 
-          <p>In this section, we explore the stops of Lausanne's transportation network. From the busiest hubs buzzing
-            with
-            activity to the quiet stops nestled in the neighborhoods, each has a character of its own. Learn about their
-            significance and how they contribute to the overall functioning of the system.</p>
+          <h3>Exploring the Stops</h3>
+          <p>In this section, we invite you to delve into the stops of Lausanne's transportation network and discover
+            their significance. Using an interactive 3D map, you can visualize the distribution and density of stops
+            throughout the city. The map provides a bird's-eye view of the interconnected web of stops, highlighting the
+            key locations and their connectivity.</p>
+          <p>Furthermore, we present a 3D histogram that represents the activity levels at different stops. This
+            histogram offers valuable insights into the intensity of passenger activity, helping you identify the
+            busiest hubs and popular destinations within the city. It showcases the ebb and flow of commuters, students,
+            residents, and visitors as they navigate through Lausanne's transportation network.</p>
 
           <div class="slider-container">
             <label for="daySelect-stops">Day:</label>
@@ -191,30 +209,67 @@
               <input type="checkbox" id="heatmapEnable"><span>Enable Heatmap</span>
             </label>
           </div>
+
+          <p>Additionally, you have the option to enable a heatmap that visualizes the activity patterns at stops. By
+            activating the heatmap, you can observe the areas with the highest concentration of passenger interactions,
+            providing valuable insights into the dynamics of transportation usage in Lausanne.</p>
+          <p>Through this exploration of stops and their activity, you will gain a deeper understanding of the bustling
+            nodes that bring Lausanne's transportation system to life. Discover where journeys begin and end, where
+            people gather and disperse, and how these stops contribute to the overall functioning and vitality of the
+            city.</p>
         </div>
 
         <!-- SECTION 5 -->
         <div id="section5" class="section">
-          <h2>EPFL students survey</h2>
-          <p>We did a survey to get the opinion of EPFL students.
-            With 150 answers, its seems that the majority is satisfied with Lausanne's transportation.</p>
+          <h2>EPFL Students' Perception on Lausanne's Transportation</h2>
+          <p>Understanding the views of EPFL students on local transportation was a vital part of our research. We
+            conducted a comprehensive survey, which saw participation from 150 students, to gather their opinions.</p>
+          <h3>Survey Findings</h3>
+          <p>Our findings suggest that the majority of students are satisfied with Lausanne's transportation system.
+            Here are some key insights from the survey:</p>
 
           <canvas id="myChart1" style="width:100%;"></canvas>
           <canvas id="myChart2" style="width:100%;"></canvas>
           <canvas id="myChart3" style="width:100%;"></canvas>
+
+          <p>These findings reflect the positive perception and satisfaction of EPFL students towards Lausanne's
+            transportation system. The results validate the efforts put into providing efficient and reliable public
+            transport options for the community.</p>
         </div>
 
         <!-- SECTION 6 -->
         <div id="section6" class="section">
-          <h2>About</h2>
-          <p>Lorem ipsum</p>
-
-          <a href="https://github.com/com-480-data-visualization/project-2023-the-vizards" target="_blank">Project's GitHub</a>
-
+          <h2>About the Project</h2>
+          <p>This project is an initiative by a team of dedicated students from the COM-480 Data Visualization course at
+            EPFL. Our goal was to provide meaningful insights into various aspects of Lausanne's transportation system
+            and enhance understanding and awareness among residents and visitors.</p>
+          <h3>Project Goals</h3>
+          <p>The main objectives of our project were:</p>
           <ul>
-            <li><a href="https://github.com/antoninfaure" target="_blank">Antonin Faure</a></li>
-            <li><a href="https://github.com/lvogelEPFL" target="_blank">Lena Vogel</a></li>
-            <li><a href="https://github.com/salma-ed" target="_blank">Salma Ed-dahabi</a></li>
+            <li>To analyze and visualize the transportation network of Lausanne: We aimed to create an interactive and
+              informative visualization that would allow users to explore the city's public transport system, including
+              the lines, stops, and their characteristics.</li>
+            <li>To highlight the importance and impact of public transportation: We wanted to showcase how Lausanne's
+              transportation network plays a crucial role in connecting people, places, and stories. By emphasizing its
+              significance, we aimed to encourage the use of public transport and promote sustainable mobility options.
+            </li>
+            <li>To provide insights based on data analysis: By analyzing transportation data, we aimed to uncover
+              patterns, trends, and performance metrics of different lines and stops. This information would help users
+              make informed decisions about their travel routes and understand the reliability and punctuality of the
+              system.</li>
+            <li>To gather feedback and perceptions from EPFL students: We conducted a survey to collect opinions and
+              experiences of EPFL students regarding Lausanne's transportation system. This feedback provided valuable
+              insights and helped us gauge the satisfaction levels and areas of improvement.</li>
+            <li>To foster collaboration and contribution: Through our project, we aimed to engage the community and
+              encourage contributions and feedback. We believe that collaboration is essential for continuous
+              improvement and innovation in transportation systems.</li>
+          </ul>
+          <h3>Meet the Team</h3>
+          <ul>
+            <li><a href="https://github.com/antoninfaure" target="_blank">Antonin Faure</a> - Master Data Science</li>
+            <li><a href="https://github.com/lvogelEPFL" target="_blank">Lena Vogel</a> - Master Life Science</li>
+            <li><a href="https://github.com/salma-ed" target="_blank">Salma Ed-Dahabi</a> - Master Communication Systems
+            </li>
           </ul>
         </div>
       </div>

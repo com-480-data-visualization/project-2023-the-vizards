@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="static/images/LT-tab.svg">
+<title>Lausanne Transportation</title>
+<meta name="description" content="Lausanne Transportation">
+<meta name="keywords" content="Lausanne, Transportation, Map, Network, Lines, Stops, History, Stories">
+<meta name="author" content="Antonin Faure">
+<meta name="author" content="Lena Vogel">
+<meta name="author" content="Salma Ed-dahabi">
+
+<link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
+<link rel="stylesheet" href="static/assets/style.css">
+
+<script type="text/javascript" src="https://unpkg.com/three@0.138.0/build/three.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/maptalks.three/dist/maptalks.three.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/maptalks.heatmap@0.6.2/dist/maptalks.heatmap.min.js"></script>
+
+<script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700" rel="stylesheet">
+
+<body>
+  <img id="logo" src="./images/LT-tab.png" alt="Lausanne Transportation Logo">
+  <div id="map"></div>
+  <div id="overlay">
+    <div id="sections">
+      <div class="sections-scroller">
+        <!-- SECTION 1 -->
+        <div id="section1" class="section">
+          <h2>Welcome to Lausanne Transportation</h2>
+          <p>Welcome to our journey through the transportation network of Lausanne. A city that thrives on connectivity,
+            Lausanne boasts a diverse and efficient public transport system. Whether you're a resident or a visitor,
+            understanding the city's transportation can greatly enhance your experience of Lausanne.</p>
+
+          <h3>The Network Map</h3>
+          <p>Our journey begins with an overview of the entire transportation network. Each line you see on the map
+            represents a vital route that connects various parts of the city. These lines are the veins of Lausanne,
+            pulsating with buses and metros, carrying commuters to and from their destinations.</p>
+
+          <p>From the bustling city center to the serene outskirts, these lines represent the city's commitment to
+            accessibility and sustainability. They serve as a testament to Lausanne's dedication to providing efficient
+            and
+            convenient public transportation.</p>
+
+          <p>Explore the map, take note of the different routes, and get ready to dive deeper into the specifics of
+            Lausanne's transportation system in the upcoming sections. We will uncover the details of different lines,
+            the
+            history behind them, and their impact on the city's life and growth.</p>
+
+          <p>Whether you're a daily commuter, an urban explorer, or a curious learner, we hope this exploration enhances
+            your understanding and appreciation of Lausanne's transportation network. So, let's embark on this journey
+            together and discover what makes this city move!</p>
+        </div>
+
+
+
+        <!-- SECTION 2 -->
+        <div id="section2" class="section">
+          <h2>The Lines: Connecting Points and People</h2>
+          <p>Each line on the map is more than just a route - it's a connection between places, people, and stories.
+            Whether they're taking students to school, employees to work, or families to the park, each line has
+            countless
+            stories to tell.</p>
+
+          <p>In this section, we delve into the specifics of the lines. From the busiest routes serving the heart of
+            Lausanne to the less frequented ones connecting the outskirts, each line has its unique traits and
+            importance.
+            Explore the details and understand how they come together to form the intricate network that keeps Lausanne
+            moving.</p>
+
+
+
+          <div>
+            <div class="slider-container">
+              <label for="daySelect-2">Day:</label>
+              <input type="range" min="0" max="6" step="1" id="daySelect-2" list="slider-labels-2">
+              <div id="slider-labels-2" class="slider-labels">
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+                <span>Sun</span>
+              </div>
+            </div>
+
+            <label for="sortSelect">Sort By:</label>
+            <select id="sortSelect">
+              <option value="arrival_delay_rank">Median Arrival Delay</option>
+              <option value="departure_delay_rank">Median Departure Delay</option>
+            </select>
+
+            <table id="championshipTable">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Line</th>
+                  <th>Median Arrival Delay (sec)</th>
+                  <th>Median Departure Delay (sec)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+
+        </div>
+
+        <!-- SECTION 3 -->
+        <div id="section3" class="section">
+          <h2>The Lines: Connecting Points and People</h2>
+          <p>Each line on the map is more than just a route - it's a connection between places, people, and stories.
+            Whether
+            they're taking students to school, employees to work, or families to the park, each line has countless
+            stories
+            to tell.</p>
+
+          <p>In this section, we delve into the specifics of the lines. From the busiest routes serving the heart of
+            Lausanne to the less frequented ones connecting the outskirts, each line has its unique traits and
+            importance.
+            Explore the details and understand how they come together to form the intricate network that keeps Lausanne
+            moving.</p>
+
+          <div class="slider-container">
+            <label for="daySelect">Day:</label>
+            <input type="range" min="0" max="6" step="1" id="daySelect">
+            <div id="daySelectLabels" class="slider-labels">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+            </div>
+          </div>
+
+          <div class="select-container">
+            <label for="lineSelect">Line:</label>
+            <select id="lineSelect"></select>
+          </div>
+
+          <div id="line-delays-plot" style="width: 50%;"></div>
+        </div>
+        
+        <!-- SECTION 4 -->
+        <div id="section4" class="section">
+          <h2>The Stops: Where Journeys Begin and End</h2>
+          <p>The heart of any transportation system lies in its stops - the places where journeys begin and end. They
+            are
+            the nodes that bind the network together, places where people gather, wait, meet, and part ways.</p>
+
+          <p>In this section, we explore the stops of Lausanne's transportation network. From the busiest hubs buzzing
+            with
+            activity to the quiet stops nestled in the neighborhoods, each has a character of its own. Learn about their
+            significance and how they contribute to the overall functioning of the system.</p>
+
+          <div class="slider-container">
+            <label for="daySelect-stops">Day:</label>
+            <input type="range" min="0" max="6" step="1" id="daySelect-stops">
+            <div class="slider-labels">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+            </div>
+          </div>
+
+          <div class="slider-container">
+            <label for="hourSelect-stops">Hour:</label>
+            <input type="range" min="0" max="23" step="1" id="hourSelect-stops">
+            <div class="slider-labels">
+              <span>0h</span>
+              <span>23h</span>
+            </div>
+          </div>
+
+          <div class="heatmap-button">
+            <label>
+              <input type="checkbox" id="heatmapEnable"><span>Enable Heatmap</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="controls">
+      <button id="prevButton" class="control-button" disabled>Previous</button>
+      <button id="nextButton" class="control-button">Next</button>
+    </div>
+  </div>
+      <!-- SECTION 5 -->
+        <div id="section5" class="section">
+          <h2>EPFL students survey </h2>
+          <p>We did a survey to get the opinion of EPFL students. 
+          With 150 respondents, its seems that the majority is satisfied  with Lausanne's transports.</p>
+
+          
+       
+
+
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<body>
+
+<canvas id="myChart1" style="width:100%;max-width:1000px"></canvas>
+<canvas id="myChart2" style="width:100%;max-width:1000px"></canvas>
+<canvas id="myChart3" style="width:100%;max-width:1000px"></canvas>
+
+<script>
+
+var xValues = ["Very satisfied", "Satisfied", "Dissatisfied", "No opinion"];
+var yValues1 = [49.3, 32, 18, 0.7];
+var yValues2 = [41.3, 38, 20, 0.7];
+var yValues3 = [38.7, 42, 18.7, 0.7];
+
+
+var barColors = ["green", "orange","#EC0000","#004E9D"];
+new Chart("myChart1", {
+  type: "horizontalBar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues1
+    }]
+  },
+  options: {
+   
+   animation: {
+    duration: 0,
+    onComplete: function () {
+        var ctx = this.chart.ctx;
+        ctx.font = Chart.helpers.fontString(14, 'normal', Chart.defaults.global.defaultFontFamily);
+        ctx.fillStyle = '#000000'
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        this.data.datasets.forEach(function (dataset) {
+            for (var i = 0; i < dataset.data.length; i++) {
+                var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                if(dataset.data[i] == 49.3){ 
+                  ctx.fillText(dataset.data[i]+"%", model.x-50, model.y +9)}
+                else if(dataset.data[i] == 0.7){ 
+                  ctx.fillText(dataset.data[i]+"%", model.x+20, model.y +9)}  
+      
+                else {ctx.fillText(dataset.data[i]+"%", model.x-16, model.y +9)};
+            }
+        });
+    }
+},
+
+    
+  scales:{
+     x: {
+       
+        grid:{
+              offset: true}
+       
+     },
+    yValues1: {
+        beginAtZero: true,
+      }
+    },
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "What do you think about Lausanne' s transports punctuality ?"
+    }
+
+    
+  }
+});
+
+new Chart("myChart2", {
+  type: "horizontalBar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues2
+    }]
+  },
+  options: {
+   
+   animation: {
+    duration: 0,
+    onComplete: function () {
+      
+        var ctx = this.chart.ctx;
+      
+        ctx.font = Chart.helpers.fontString(14, 'normal', Chart.defaults.global.defaultFontFamily);
+        ctx.fillStyle = '#000000'
+        
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        this.data.datasets.forEach(function (dataset) {
+            for (var i = 0; i < dataset.data.length; i++) {
+                var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                if(dataset.data[i] == 41.3){ 
+                  ctx.fillText(dataset.data[i]+"%", model.x-50, model.y +9)}
+                else if(dataset.data[i] == 0.7){ 
+                  ctx.fillText(dataset.data[i]+"%", model.x+20, model.y +9)}  
+      
+                else {ctx.fillText(dataset.data[i]+"%", model.x-16, model.y +9)};
+            }
+        });
+    }
+},
+
+    
+  scales:{
+     x: {
+       
+        grid:{
+              offset: true}
+       
+     },
+    yValues2: {
+        beginAtZero: true,
+       
+      
+    }
+    },
+    legend: {display: false},
+    title: {
+      display: true,
+      text: " Is the available transport offer  satisfactory? Is Lausanne well served?"
+    }
+
+    
+  }
+});
+new Chart("myChart3", {
+  type: "horizontalBar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues3
+    }]
+  },
+  options: {
+   
+   animation: {
+    duration: 0,
+    onComplete: function () {
+  
+        var ctx = this.chart.ctx;
+        
+        ctx.font = Chart.helpers.fontString(14, 'normal', Chart.defaults.global.defaultFontFamily);
+        ctx.fillStyle = '#000000'
+        
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'bottom';
+        this.data.datasets.forEach(function (dataset) {
+            for (var i = 0; i < dataset.data.length; i++) {
+                var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
+                if(dataset.data[i] == 38.7){ 
+                  ctx.fillText(dataset.data[i]+"%", model.x-20,model.y +9)}
+                else if(dataset.data[i] == 0.7){ 
+                  ctx.fillText(dataset.data[i]+"%", model.x+20, model.y +9)}  
+                else if(dataset.data[i] == 18.7){ 
+                  ctx.fillText(dataset.data[i]+"%", model.x-20, model.y +9)}  
+                else {ctx.fillText(dataset.data[i]+"%", model.x-15, model.y +9)};
+            }
+        });
+    }
+},
+
+    
+  scales:{
+     x: {
+        
+        grid:{
+              offset: true}
+       
+     },
+    yValues3: {
+        beginAtZero: true,
+      
+        
+      
+    }
+    },
+    legend: {display: false},
+    title: {
+      display: true,
+      text: " What do you think of the Lausanne network connectivity?"
+    }
+
+    
+  }
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</script>
+  <div class="doors">
+    <div class="door door-left"></div>
+    <div class="door door-right"></div>
+  </div>
+
+  <script src="static/assets/utils.js"></script>
+  <script src="static/assets/sections.js"></script>
+  <script>
+
+    const MAX_MOBILE_WIDTH = 1500;
+
+    var map = new maptalks.Map('map', {
+      center: window.innerWidth > MAX_MOBILE_WIDTH ? [6.6736, 46.5409] : [6.6322, 46.5192],
+      zoom: 13,
+      pitch: 40,
+      bearing: 0,
+      baseLayer: new maptalks.TileLayer('base', {
+        urlTemplate: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+        subdomains: ["a", "b", "c", "d"],
+        attribution: '&copy; <a href="http://osm.org">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>'
+      })
+    });
+
+    var threeLayer = new maptalks.ThreeLayer('t');
+    var heatmapLayer = new maptalks.HeatLayer('heatmap', [], {
+      'radius': 32,
+      'blur': 60
+    });
+    var stopsLayer = new maptalks.ThreeLayer('stops');
+
+    threeLayer.prepareToDraw = function (gl, scene, camera) {
+      var light = new THREE.DirectionalLight(0xffffff);
+      light.position.set(0, -10, 10).normalize();
+      scene.add(light);
+      scene.add(new THREE.AmbientLight('#fff', 0.5));
+
+      loadLines().then(function (data) {
+        const linesMesh = data.linesMesh;
+        const displayableLines = data.displayableLines;
+
+        loadDelays().then(function (data) {
+          const delaysMesh = data.delaysMesh;
+          const linesWithDelays = data.linesWithDelays;
+          const delaysData = data.delaysData;
+
+          const optionsLines = createLineSelect(displayableLines, linesWithDelays);
+
+          const lineSelect = document.getElementById('lineSelect');
+          const daySelect = document.getElementById('daySelect');
+
+          lineSelect.addEventListener('change', function () {
+            updateVisibilityLine(linesMesh, delaysMesh)
+            plotLineDelays(delaysData, optionsLines)
+            var selectedOption = this.options[this.selectedIndex];
+            this.style.backgroundColor = selectedOption.style.backgroundColor;
+          });
+          daySelect.addEventListener('input', function () {
+            updateVisibilityLine(linesMesh, delaysMesh)
+            plotLineDelays(delaysData, optionsLines)
+          });
+
+          loadChampionship(linesMesh, optionsLines).then(function () {
+
+            loadStops().then(function (data) {
+              const stopsData = data.stopsData;
+              const stopsMesh = data.stopsMesh;
+
+              const hourSelect = document.getElementById('hourSelect-stops');
+              const daySelect = document.getElementById('daySelect-stops');
+
+              var light = new THREE.DirectionalLight(0xffffff);
+              light.position.set(0, -10, 10).normalize();
+
+              stopsLayer.getScene().add(light);
+              stopsLayer.getScene().add(new THREE.AmbientLight('#fff', 0.5));
+
+              hourSelect.addEventListener('input', function () {
+                updateHeatmap(stopsData)
+                showStops(stopsMesh)
+              });
+
+              daySelect.addEventListener('input', function () {
+                updateHeatmap(stopsData)
+                showStops(stopsMesh)
+              });
+
+              document.getElementById('heatmapEnable').addEventListener('change', function () {
+                updateHeatmap(stopsData)
+              });
+
+              createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData);
+              openDoors();
+            })
+          })
+        })
+      });
+
+    };
+
+    map.addLayer(threeLayer);
+    map.addLayer(heatmapLayer);
+    map.addLayer(stopsLayer);
+
+    // TOOL TIP //
+    let tooltip = document.createElement('div');
+    tooltip.id = 'tooltip';
+    tooltip.style.position = 'absolute';
+    tooltip.style.backgroundColor = 'white';
+    tooltip.style.border = '1px solid black';
+    tooltip.style.padding = '10px 20px';
+    tooltip.style.display = 'none'; // Hide the tooltip by default
+    tooltip.style.pointerEvents = 'none'; // Make sure the tooltip doesn't block mouse events on the map
+    tooltip.style.borderRadius = '10px';
+    tooltip.style.boxShadow = '2px 2px 6px 0px rgba(0,0,0,0.3)';
+    tooltip.style.marginLeft = '10px';
+    tooltip.style.marginTop = '10px';
+    document.body.appendChild(tooltip);
+
+    function showTooltip(e) {
+      let intersected = threeLayer.identify(e.coordinate);
+      let intersectedStops = stopsLayer.identify(e.coordinate);
+
+      if (intersectedStops && intersectedStops.length > 0) { // STOPS INTERSECTIONS
+
+        intersectedOptions = intersectedStops[0].options
+
+        if ('activity' in intersectedOptions) {
+          tooltip.innerHTML = `<b>${intersectedOptions.stop_name}</b><br>${intersectedOptions.activity} transactions on average`;
+
+        } else {
+          // Hide tooltip if not hovering over a mesh
+          tooltip.style.display = 'none';
+          return
+        }
+      } else if (intersected && intersected.length > 0) { // OTHER INTERSECTIONS
+
+        intersectedOptions = intersected[0].options
+
+        if ('arrival_delay' in intersectedOptions) {
+          tooltip.innerHTML = `<b>${intersectedOptions.stop_name}</b><br>Median arrival delay: ${intersectedOptions.arrival_delay}s`;
+        } else if ('departure_delay' in intersectedOptions) {
+          tooltip.innerHTML = `<b>${intersectedOptions.stop_name}</b><br>Median departure delay: ${intersectedOptions.departure_delay}s`;
+        } else if ('line_name' in intersectedOptions) {
+          tooltip.innerHTML = `<b>Line ${intersectedOptions.line_name}</b>`;
+        } else {
+          // Hide tooltip if not hovering over a mesh
+          tooltip.style.display = 'none';
+          return
+        }
+
+      } else {
+        // Hide tooltip if not hovering over a mesh
+        tooltip.style.display = 'none';
+        return
+      }
+
+      // Show  tooltip
+      tooltip.style.display = 'block';
+      tooltip.style.left = e.containerPoint.x + 'px';
+      tooltip.style.top = e.containerPoint.y + 'px';
+
+    }
+
+    map.on('mousemove', showTooltip);
+    map.on('touchmove', showTooltip);
+
+  </script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "color": "#EC008C",
+        "color": "#ec008c",
         "line": "m1",
         "route": "metro"
       },
@@ -1309,7 +1309,7 @@
     {
       "type": "Feature",
       "properties": {
-        "color": "#EC008C",
+        "color": "#ec008c",
         "line": "m2",
         "type": "metro"
       },

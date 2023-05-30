@@ -1,0 +1,3297 @@
+[
+    {
+        "name": "1",
+        "stops": [
+            [
+                1.0,
+                8592068,
+                "Lausanne, Maladi\u00e8re"
+            ],
+            [
+                2.0,
+                8592080,
+                "Lausanne, Montoie"
+            ],
+            [
+                3.5,
+                8592110,
+                "Lausanne, Riant-Cour"
+            ],
+            [
+                3.5,
+                8591983,
+                "Lausanne, Bateli\u00e8re"
+            ],
+            [
+                5.0,
+                8592005,
+                "Lausanne, C\u00e8dres"
+            ],
+            [
+                6.5,
+                8592024,
+                "Lausanne, Cour"
+            ],
+            [
+                6.5,
+                8591985,
+                "Lausanne, jardin botanique"
+            ],
+            [
+                8.0,
+                8592027,
+                "Lausanne, Dapples"
+            ],
+            [
+                9.0,
+                8592040,
+                "Lausanne, Epinettes"
+            ],
+            [
+                10.0,
+                8592050,
+                "Lausanne, gare"
+            ],
+            [
+                11.0,
+                8592072,
+                "Lausanne, Mirabeau"
+            ],
+            [
+                12.0,
+                8592051,
+                "Lausanne, Georgette"
+            ],
+            [
+                13.0,
+                8579254,
+                "Lausanne, St-Fran\u00e7ois"
+            ],
+            [
+                14.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                15.5,
+                8590442,
+                "Lausanne, Riponne-M. B\u00e9jart"
+            ],
+            [
+                15.5,
+                8592125,
+                "Lausanne, Valentin"
+            ],
+            [
+                17.0,
+                8592034,
+                "Lausanne, Druey-Coll\u00e8ge"
+            ],
+            [
+                18.0,
+                8592085,
+                "Lausanne, Oiseaux"
+            ],
+            [
+                19.5,
+                8592003,
+                "Lausanne, casernes"
+            ],
+            [
+                19.5,
+                8592116,
+                "Lausanne, Stade Olympique"
+            ],
+            [
+                21.0,
+                8592088,
+                "Lausanne, Parc V\u00e9lodrome"
+            ],
+            [
+                22.0,
+                8591996,
+                "Lausanne, Bois-Gentil"
+            ],
+            [
+                23.0,
+                8591994,
+                "Lausanne, Bl\u00e9cherette"
+            ]
+        ]
+    },
+    {
+        "name": "13",
+        "stops": [
+            [
+                1.5,
+                8592045,
+                "Lausanne, Floreyres"
+            ],
+            [
+                1.5,
+                8592129,
+                "Lausanne, Verdeil"
+            ],
+            [
+                3.5,
+                8592083,
+                "Lausanne, Mousquines"
+            ],
+            [
+                3.5,
+                8592009,
+                "Lausanne, Chandolin"
+            ],
+            [
+                5.0,
+                8592074,
+                "Lausanne, Mon Repos"
+            ],
+            [
+                6.0,
+                8591991,
+                "Lausanne, Benj. Constant"
+            ],
+            [
+                7.0,
+                8579254,
+                "Lausanne, St-Fran\u00e7ois"
+            ],
+            [
+                8.0,
+                8579253,
+                "Lausanne, Montbenon"
+            ]
+        ]
+    },
+    {
+        "name": "16",
+        "stops": [
+            [
+                1.0,
+                8592105,
+                "Lausanne, Provence nord"
+            ],
+            [
+                2.5,
+                8592106,
+                "Lausanne, Provence sud"
+            ],
+            [
+                2.5,
+                8593844,
+                "Lausanne,Vall\u00e9e de la Jeunesse"
+            ],
+            [
+                4.0,
+                8592021,
+                "Lausanne, Cottages"
+            ],
+            [
+                5.0,
+                8501207,
+                "Lausanne, Montelly"
+            ],
+            [
+                6.0,
+                8591990,
+                "Lausanne, Belv\u00e9d\u00e8re"
+            ],
+            [
+                7.0,
+                8592122,
+                "Lausanne, Tivoli"
+            ],
+            [
+                8.0,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                9.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                10.0,
+                8590442,
+                "Lausanne, Riponne-M. B\u00e9jart"
+            ],
+            [
+                11.5,
+                8591982,
+                "Lausanne, Barre"
+            ],
+            [
+                11.5,
+                8504176,
+                "Lausanne, Tunnel"
+            ],
+            [
+                13.0,
+                8592138,
+                "Lausanne, Vulliemin"
+            ],
+            [
+                14.0,
+                8592091,
+                "Lausanne, Petit Ch\u00e2teau"
+            ],
+            [
+                15.5,
+                8592059,
+                "Lausanne, Hermitage"
+            ],
+            [
+                15.5,
+                8592067,
+                "Lausanne, Lisi\u00e8re"
+            ],
+            [
+                17.0,
+                8592115,
+                "Lausanne, Signal"
+            ],
+            [
+                18.0,
+                8592016,
+                "Lausanne, Chocolati\u00e8re"
+            ],
+            [
+                19.0,
+                8592063,
+                "Lausanne, Lac Sauvabelin"
+            ],
+            [
+                20.0,
+                8592137,
+                "Lausanne, Cascades"
+            ],
+            [
+                21.0,
+                8592066,
+                "Lausanne, Libellules"
+            ],
+            [
+                22.0,
+                8592054,
+                "Lausanne, Grand Vennes"
+            ]
+        ]
+    },
+    {
+        "name": "17",
+        "stops": [
+            [
+                1.0,
+                8591818,
+                "Lausanne-Flon, pl. de l'Europe"
+            ],
+            [
+                2.5,
+                8592098,
+                "Lausanne, Port-Franc"
+            ],
+            [
+                2.5,
+                8592041,
+                "Lausanne, EPSIC"
+            ],
+            [
+                4.5,
+                8592022,
+                "Lausanne, Couchirard"
+            ],
+            [
+                4.5,
+                8592036,
+                "Lausanne, Ecole des M\u00e9tiers"
+            ],
+            [
+                6.0,
+                8592103,
+                "Lausanne, Pr\u00e9laz-les-Roses"
+            ],
+            [
+                7.0,
+                8592049,
+                "Prilly, Galicien"
+            ],
+            [
+                8.0,
+                8592217,
+                "Renens VD, Perrelet"
+            ],
+            [
+                9.0,
+                8592223,
+                "Renens VD, village"
+            ],
+            [
+                10.0,
+                8592221,
+                "Renens VD, Sous l'Eglise"
+            ],
+            [
+                11.0,
+                8592213,
+                "Renens VD, H\u00f4tel-de-Ville"
+            ],
+            [
+                12.0,
+                8592202,
+                "Renens VD, Avenir"
+            ],
+            [
+                13.0,
+                8588839,
+                "Renens VD, 14 Avril"
+            ],
+            [
+                14.0,
+                8593815,
+                "Crissier, Jura"
+            ],
+            [
+                15.5,
+                8591935,
+                "Crissier, Arc-en-Ciel"
+            ],
+            [
+                15.5,
+                8591939,
+                "Crissier, Zinguerie"
+            ],
+            [
+                17.0,
+                8591930,
+                "Bussigny, Croix de Plan"
+            ],
+            [
+                18.0,
+                8591931,
+                "Bussigny, Buy\u00e8re"
+            ],
+            [
+                19.0,
+                8594177,
+                "Bussigny, Cocagne"
+            ],
+            [
+                20.0,
+                8594178,
+                "Bussigny, Rente"
+            ],
+            [
+                21.0,
+                8588846,
+                "Villars-Ste-Croix, Croix P\u00e9age"
+            ]
+        ]
+    },
+    {
+        "name": "18",
+        "stops": [
+            [
+                1.0,
+                8588845,
+                "Crissier, Timonet"
+            ],
+            [
+                2.0,
+                8588843,
+                "Crissier, centre"
+            ],
+            [
+                3.0,
+                8588842,
+                "Crissier, Br\u00e9"
+            ],
+            [
+                4.0,
+                8592204,
+                "Renens VD, Bois-Genoud"
+            ],
+            [
+                5.5,
+                8592222,
+                "Renens VD, Sur-la-Croix"
+            ],
+            [
+                5.5,
+                8592203,
+                "Renens VD, Baumettes"
+            ],
+            [
+                7.5,
+                8592208,
+                "Renens VD, Bugnon"
+            ],
+            [
+                7.5,
+                8592206,
+                "Renens VD, Bourg-Dessus"
+            ],
+            [
+                9.0,
+                8592207,
+                "Renens VD, Broye"
+            ],
+            [
+                10.0,
+                8592211,
+                "Renens VD, Florissant"
+            ],
+            [
+                11.0,
+                8592217,
+                "Renens VD, Perrelet"
+            ],
+            [
+                12.0,
+                8592049,
+                "Prilly, Galicien"
+            ],
+            [
+                13.0,
+                8592103,
+                "Lausanne, Pr\u00e9laz-les-Roses"
+            ],
+            [
+                14.0,
+                8592102,
+                "Lausanne, Pr\u00e9laz"
+            ],
+            [
+                15.0,
+                8592109,
+                "Lausanne, Recordon"
+            ],
+            [
+                16.0,
+                8592001,
+                "Lausanne, Boston"
+            ],
+            [
+                17.0,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                18.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                19.0,
+                8590442,
+                "Lausanne, Riponne-M. B\u00e9jart"
+            ],
+            [
+                20.5,
+                8504176,
+                "Lausanne, Tunnel"
+            ],
+            [
+                20.5,
+                8592071,
+                "Lausanne, M\u00e9mise"
+            ],
+            [
+                22.0,
+                8592053,
+                "Lausanne, Grande-Borde"
+            ],
+            [
+                23.0,
+                8592132,
+                "Lausanne, Vieux-Moulin"
+            ],
+            [
+                25.0,
+                8592111,
+                "Lausanne, Rouvraie"
+            ],
+            [
+                25.0,
+                8592047,
+                "Lausanne, For\u00eat"
+            ],
+            [
+                25.0,
+                8592082,
+                "Lausanne, Motte"
+            ],
+            [
+                27.5,
+                8592089,
+                "Lausanne, Pavement"
+            ],
+            [
+                27.5,
+                8587357,
+                "Lausanne, Bellevaux"
+            ],
+            [
+                29.0,
+                8592092,
+                "Lausanne, Pi\u00e9cettes"
+            ],
+            [
+                30.0,
+                8592019,
+                "Lausanne, Clochatte"
+            ]
+        ]
+    },
+    {
+        "name": "19",
+        "stops": [
+            [
+                1.0,
+                8588839,
+                "Renens VD, 14 Avril"
+            ],
+            [
+                2.0,
+                8592202,
+                "Renens VD, Avenir"
+            ],
+            [
+                3.0,
+                8592213,
+                "Renens VD, H\u00f4tel-de-Ville"
+            ],
+            [
+                4.0,
+                8592221,
+                "Renens VD, Sous l'Eglise"
+            ],
+            [
+                5.0,
+                8592223,
+                "Renens VD, village"
+            ],
+            [
+                6.0,
+                8592217,
+                "Renens VD, Perrelet"
+            ],
+            [
+                7.0,
+                8592049,
+                "Prilly, Galicien"
+            ],
+            [
+                8.0,
+                8592103,
+                "Lausanne, Pr\u00e9laz-les-Roses"
+            ],
+            [
+                9.0,
+                8592102,
+                "Lausanne, Pr\u00e9laz"
+            ],
+            [
+                10.0,
+                8592109,
+                "Lausanne, Recordon"
+            ],
+            [
+                11.0,
+                8592001,
+                "Lausanne, Boston"
+            ],
+            [
+                12.0,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                13.0,
+                8592011,
+                "Lausanne, Chauderon-Ale"
+            ],
+            [
+                14.0,
+                8592010,
+                "Lausanne, Chauderon"
+            ]
+        ]
+    },
+    {
+        "name": "2",
+        "stops": [
+            [
+                1.0,
+                8593838,
+                "Lausanne, Maladi\u00e8re-Lac"
+            ],
+            [
+                2.0,
+                8592121,
+                "Lausanne, Th\u00e9\u00e2tre de Vidy"
+            ],
+            [
+                3.5,
+                8591989,
+                "Lausanne, Bellerive"
+            ],
+            [
+                3.5,
+                8592090,
+                "Lausanne, P\u00eacheurs"
+            ],
+            [
+                5.0,
+                8592086,
+                "Lausanne, Ouchy-Olympique"
+            ],
+            [
+                6.0,
+                8591986,
+                "Lausanne, Beau-Rivage"
+            ],
+            [
+                7.0,
+                8592061,
+                "Lausanne, Jordils"
+            ],
+            [
+                8.5,
+                8592026,
+                "Lausanne, Croix d'Ouchy"
+            ],
+            [
+                8.5,
+                8592079,
+                "Lausanne, Mont-Fleuri"
+            ],
+            [
+                10.0,
+                8592020,
+                "Lausanne, Closelet"
+            ],
+            [
+                11.0,
+                8592072,
+                "Lausanne, Mirabeau"
+            ],
+            [
+                12.0,
+                8592051,
+                "Lausanne, Georgette"
+            ],
+            [
+                13.0,
+                8579254,
+                "Lausanne, St-Fran\u00e7ois"
+            ],
+            [
+                14.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                15.5,
+                8592125,
+                "Lausanne, Valentin"
+            ],
+            [
+                15.5,
+                8590442,
+                "Lausanne, Riponne-M. B\u00e9jart"
+            ],
+            [
+                17.0,
+                8592135,
+                "Lausanne, Vinet"
+            ],
+            [
+                18.5,
+                8591984,
+                "Lausanne, Beaulieu"
+            ],
+            [
+                18.5,
+                8592060,
+                "Lausanne, Beaulieu-Jomini"
+            ],
+            [
+                20.0,
+                8592104,
+                "Lausanne, Presbyt\u00e8re"
+            ],
+            [
+                21.0,
+                8591992,
+                "Lausanne, Bergi\u00e8res"
+            ],
+            [
+                22.0,
+                8592057,
+                "Lausanne, Grey"
+            ],
+            [
+                23.0,
+                8592094,
+                "Lausanne, Pierrefleur"
+            ],
+            [
+                24.0,
+                8592087,
+                "Lausanne, Parc Rivier"
+            ],
+            [
+                25.0,
+                8592030,
+                "Lausanne, D\u00e9sert"
+            ]
+        ]
+    },
+    {
+        "name": "20",
+        "stops": [
+            [
+                1.0,
+                8592050,
+                "Lausanne, gare"
+            ],
+            [
+                2.0,
+                8592134,
+                "Lausanne, Villard"
+            ],
+            [
+                3.0,
+                8592004,
+                "Lausanne, C\u00e9cil"
+            ],
+            [
+                4.5,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                4.5,
+                8592120,
+                "Lausanne, St-Roch"
+            ],
+            [
+                6.0,
+                8592060,
+                "Lausanne, Beaulieu-Jomini"
+            ],
+            [
+                7.0,
+                8592076,
+                "Lausanne, Mont-Blanc"
+            ],
+            [
+                8.0,
+                8592003,
+                "Lausanne, casernes"
+            ],
+            [
+                9.0,
+                8592116,
+                "Lausanne, Stade Olympique"
+            ],
+            [
+                10.0,
+                8592088,
+                "Lausanne, Parc V\u00e9lodrome"
+            ],
+            [
+                11.0,
+                8591996,
+                "Lausanne, Bois-Gentil"
+            ],
+            [
+                12.0,
+                8591994,
+                "Lausanne, Bl\u00e9cherette"
+            ]
+        ]
+    },
+    {
+        "name": "21",
+        "stops": [
+            [
+                1.0,
+                8592168,
+                "Paudex, Verri\u00e8re"
+            ],
+            [
+                2.0,
+                8592199,
+                "Pully, Vignes"
+            ],
+            [
+                3.5,
+                8588439,
+                "Pully, port"
+            ],
+            [
+                3.5,
+                8588440,
+                "Pully, Somais"
+            ],
+            [
+                6.0,
+                8588441,
+                "Pully, Ch\u00e2taignier"
+            ],
+            [
+                6.0,
+                8592170,
+                "Pully, Bourdonni\u00e8re"
+            ],
+            [
+                6.0,
+                8592198,
+                "Pully, Verney"
+            ],
+            [
+                8.0,
+                8592197,
+                "Pully, Tour Haldimand"
+            ],
+            [
+                9.0,
+                8592029,
+                "Lausanne, Denantou"
+            ],
+            [
+                10.0,
+                8592084,
+                "Lausanne, Mus\u00e9e Olympique"
+            ],
+            [
+                11.5,
+                8592077,
+                "Lausanne, Montchoisi"
+            ],
+            [
+                11.5,
+                8592062,
+                "Lausanne, Jurigoz"
+            ],
+            [
+                13.0,
+                8591979,
+                "Lausanne, Alpes"
+            ],
+            [
+                14.0,
+                8592050,
+                "Lausanne, gare"
+            ],
+            [
+                15.0,
+                8592134,
+                "Lausanne, Villard"
+            ],
+            [
+                16.0,
+                8592004,
+                "Lausanne, C\u00e9cil"
+            ],
+            [
+                17.5,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                17.5,
+                8592120,
+                "Lausanne, St-Roch"
+            ],
+            [
+                19.5,
+                8591984,
+                "Lausanne, Beaulieu"
+            ],
+            [
+                19.5,
+                8592060,
+                "Lausanne, Beaulieu-Jomini"
+            ],
+            [
+                21.0,
+                8592104,
+                "Lausanne, Presbyt\u00e8re"
+            ],
+            [
+                22.0,
+                8591992,
+                "Lausanne, Bergi\u00e8res"
+            ],
+            [
+                23.5,
+                8591998,
+                "Lausanne, Boisy"
+            ],
+            [
+                23.5,
+                8591987,
+                "Lausanne, Beau-Site"
+            ],
+            [
+                25.0,
+                8592056,
+                "Lausanne, Grattapaille"
+            ],
+            [
+                26.0,
+                8592000,
+                "Lausanne, Bossons"
+            ],
+            [
+                27.0,
+                8591994,
+                "Lausanne, Bl\u00e9cherette"
+            ]
+        ]
+    },
+    {
+        "name": "23",
+        "stops": [
+            [
+                1.0,
+                8592082,
+                "Lausanne, Motte"
+            ],
+            [
+                2.0,
+                8592111,
+                "Lausanne, Rouvraie"
+            ],
+            [
+                3.0,
+                8592082,
+                "Lausanne, Motte"
+            ],
+            [
+                4.0,
+                8592047,
+                "Lausanne, For\u00eat"
+            ],
+            [
+                5.0,
+                8595004,
+                "Lausanne, Entre-Bois"
+            ],
+            [
+                6.0,
+                8595005,
+                "Le Mont-sur-L., Maillefer"
+            ]
+        ]
+    },
+    {
+        "name": "24",
+        "stops": [
+            [
+                1.0,
+                8595936,
+                "Lausanne, Tour Haldimand-Lac"
+            ],
+            [
+                2.0,
+                8595933,
+                "Lausanne, Parc Mus\u00e9e Olympique"
+            ],
+            [
+                3.0,
+                8592086,
+                "Lausanne, Ouchy-Olympique"
+            ],
+            [
+                4.0,
+                8592090,
+                "Lausanne, P\u00eacheurs"
+            ],
+            [
+                5.5,
+                8592121,
+                "Lausanne, Th\u00e9\u00e2tre de Vidy"
+            ],
+            [
+                5.5,
+                8591989,
+                "Lausanne, Bellerive"
+            ],
+            [
+                7.5,
+                8595935,
+                "Lausanne, Stade de Coubertin"
+            ],
+            [
+                7.5,
+                8595938,
+                "Lausanne, Vidy-Port"
+            ],
+            [
+                9.0,
+                8595934,
+                "Lausanne, Si\u00e8ge du CIO"
+            ],
+            [
+                10.0,
+                8595939,
+                "Lausanne, Parc Bourget"
+            ],
+            [
+                11.0,
+                8595937,
+                "Lausanne, sports UNIL-EPFL"
+            ],
+            [
+                12.0,
+                8501210,
+                "Lausanne, Bourdonnette"
+            ]
+        ]
+    },
+    {
+        "name": "25",
+        "stops": [
+            [
+                2.0,
+                8588443,
+                "Pully, Pr\u00e9au"
+            ],
+            [
+                2.0,
+                8588445,
+                "Pully, gare"
+            ],
+            [
+                2.0,
+                8592182,
+                "Pully, Joliette"
+            ],
+            [
+                4.0,
+                8592172,
+                "Pully, C. F. Ramuz"
+            ],
+            [
+                5.5,
+                8592186,
+                "Pully, M\u00e9tairie"
+            ],
+            [
+                5.5,
+                8592193,
+                "Pully, Pierraz-Portay"
+            ],
+            [
+                7.5,
+                8592077,
+                "Lausanne, Montchoisi"
+            ],
+            [
+                7.5,
+                8592084,
+                "Lausanne, Mus\u00e9e Olympique"
+            ],
+            [
+                9.0,
+                8592039,
+                "Lausanne, Elys\u00e9e"
+            ],
+            [
+                10.0,
+                8592028,
+                "Lausanne, D\u00e9lices"
+            ],
+            [
+                11.0,
+                8591985,
+                "Lausanne, jardin botanique"
+            ],
+            [
+                12.0,
+                8592005,
+                "Lausanne, C\u00e8dres"
+            ],
+            [
+                13.0,
+                8592110,
+                "Lausanne, Riant-Cour"
+            ],
+            [
+                14.5,
+                8591983,
+                "Lausanne, Bateli\u00e8re"
+            ],
+            [
+                14.5,
+                8592044,
+                "Lausanne, Figuiers"
+            ],
+            [
+                16.0,
+                8593837,
+                "Lausanne, Maladi\u00e8re-Figuiers"
+            ],
+            [
+                17.0,
+                8591995,
+                "Lausanne, Bois de Vaux"
+            ],
+            [
+                18.0,
+                8592114,
+                "Lausanne, Sablons"
+            ],
+            [
+                19.0,
+                8595521,
+                "Lausanne, Bourdonnette nord"
+            ],
+            [
+                20.0,
+                8595602,
+                "Chavannes-R., Dorigny"
+            ],
+            [
+                21.0,
+                8510422,
+                "Chavannes-R., Talluchet"
+            ],
+            [
+                22.0,
+                8595534,
+                "Renens VD, piscine"
+            ],
+            [
+                23.0,
+                8592209,
+                "Renens VD, Censuy"
+            ],
+            [
+                24.0,
+                8588983,
+                "Renens VD, gare sud"
+            ],
+            [
+                25.0,
+                8593869,
+                "Chavannes-R., Glycines"
+            ]
+        ]
+    },
+    {
+        "name": "3",
+        "stops": [
+            [
+                1.0,
+                8592050,
+                "Lausanne, gare"
+            ],
+            [
+                2.0,
+                8592134,
+                "Lausanne, Villard"
+            ],
+            [
+                3.0,
+                8592004,
+                "Lausanne, C\u00e9cil"
+            ],
+            [
+                4.5,
+                8592120,
+                "Lausanne, St-Roch"
+            ],
+            [
+                4.5,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                6.0,
+                8592060,
+                "Lausanne, Beaulieu-Jomini"
+            ],
+            [
+                7.0,
+                8592076,
+                "Lausanne, Mont-Blanc"
+            ],
+            [
+                8.0,
+                8592003,
+                "Lausanne, casernes"
+            ],
+            [
+                9.5,
+                8592111,
+                "Lausanne, Rouvraie"
+            ],
+            [
+                9.5,
+                8592082,
+                "Lausanne, Motte"
+            ],
+            [
+                11.0,
+                8592047,
+                "Lausanne, For\u00eat"
+            ],
+            [
+                12.0,
+                8587357,
+                "Lausanne, Bellevaux"
+            ]
+        ]
+    },
+    {
+        "name": "31",
+        "stops": [
+            [
+                1.0,
+                8579231,
+                "St-Sulpice VD, Venoge sud"
+            ],
+            [
+                2.5,
+                8588155,
+                "St-Sulpice VD, Chantres"
+            ],
+            [
+                2.5,
+                8588156,
+                "St-Sulpice VD, Laviau"
+            ],
+            [
+                4.0,
+                8588158,
+                "St-Sulpice VD, centre"
+            ],
+            [
+                5.0,
+                8588157,
+                "St-Sulpice VD, Bochet"
+            ],
+            [
+                6.0,
+                8592226,
+                "St-Sulpice VD, Russel"
+            ],
+            [
+                7.0,
+                8592227,
+                "St-Sulpice VD, P\u00e2queret"
+            ],
+            [
+                8.0,
+                8591944,
+                "Ecublens VD, Argand"
+            ],
+            [
+                9.0,
+                8501213,
+                "Ecublens VD, UNIL-Sorge"
+            ],
+            [
+                10.0,
+                8594987,
+                "Chavannes-R., Mouline"
+            ],
+            [
+                11.0,
+                8594986,
+                "Chavannes-R., Berges"
+            ],
+            [
+                12.5,
+                8593867,
+                "Chavannes-R., Plaine"
+            ],
+            [
+                12.5,
+                8507227,
+                "Chavannes-R., C\u00e8dres"
+            ],
+            [
+                14.0,
+                8593868,
+                "Chavannes-R., Concorde"
+            ],
+            [
+                15.0,
+                8591933,
+                "Chavannes-R., Planta"
+            ],
+            [
+                16.0,
+                8593869,
+                "Chavannes-R., Glycines"
+            ],
+            [
+                17.0,
+                8588983,
+                "Renens VD, gare sud"
+            ]
+        ]
+    },
+    {
+        "name": "32",
+        "stops": [
+            [
+                1.0,
+                8592202,
+                "Renens VD, Avenir"
+            ],
+            [
+                2.5,
+                8510421,
+                "Crissier, Chicor\u00e9e"
+            ],
+            [
+                2.5,
+                8588839,
+                "Renens VD, 14 Avril"
+            ],
+            [
+                4.0,
+                8588840,
+                "Crissier, Noutes"
+            ],
+            [
+                5.0,
+                8588841,
+                "Crissier, scierie"
+            ],
+            [
+                6.0,
+                8588842,
+                "Crissier, Br\u00e9"
+            ],
+            [
+                7.0,
+                8588843,
+                "Crissier, centre"
+            ],
+            [
+                8.0,
+                8588845,
+                "Crissier, Timonet"
+            ],
+            [
+                9.5,
+                8595978,
+                "Villars-Ste-Croix, Colice"
+            ],
+            [
+                9.5,
+                8588846,
+                "Villars-Ste-Croix, Croix P\u00e9age"
+            ],
+            [
+                11.0,
+                8588848,
+                "Villars-Ste-Croix, Le Sansy"
+            ],
+            [
+                12.0,
+                8588847,
+                "Villars-Ste-Croix, village"
+            ],
+            [
+                13.0,
+                8583748,
+                "Villars-Ste-Croix, En Coulaye"
+            ]
+        ]
+    },
+    {
+        "name": "33",
+        "stops": [
+            [
+                1.5,
+                8592187,
+                "Prilly, Mont-Goulin"
+            ],
+            [
+                1.5,
+                8592176,
+                "Prilly, Coudraie"
+            ],
+            [
+                3.0,
+                8592175,
+                "Prilly, Chasseur"
+            ],
+            [
+                4.0,
+                8592173,
+                "Prilly, centre"
+            ],
+            [
+                5.0,
+                8592180,
+                "Prilly, Grand Vigne"
+            ],
+            [
+                6.0,
+                8592179,
+                "Prilly, Flumeaux"
+            ],
+            [
+                7.0,
+                8592049,
+                "Prilly, Galicien"
+            ],
+            [
+                8.0,
+                8501209,
+                "Lausanne, Malley"
+            ],
+            [
+                9.5,
+                8592215,
+                "Renens VD, Longemalle"
+            ],
+            [
+                9.5,
+                8592219,
+                "Renens VD, rue du Lac"
+            ],
+            [
+                11.0,
+                8592210,
+                "Renens VD, Ch\u00eane"
+            ],
+            [
+                12.0,
+                8592218,
+                "Renens VD, Caudray"
+            ],
+            [
+                13.0,
+                8592209,
+                "Renens VD, Censuy"
+            ],
+            [
+                14.0,
+                8588983,
+                "Renens VD, gare sud"
+            ],
+            [
+                15.0,
+                8510721,
+                "Ecublens VD, Epenex/Pont-Bleu"
+            ],
+            [
+                16.0,
+                8591958,
+                "Ecublens VD, Suchet-For\u00eat"
+            ],
+            [
+                17.0,
+                8591953,
+                "Ecublens VD, Parc"
+            ],
+            [
+                18.5,
+                8591955,
+                "Ecublens VD, place de sport"
+            ],
+            [
+                18.5,
+                8591948,
+                "Ecublens VD, Croset"
+            ],
+            [
+                20.0,
+                8591957,
+                "Ecublens VD, Stand"
+            ],
+            [
+                21.0,
+                8591960,
+                "Ecublens VD, Veilloud"
+            ],
+            [
+                22.0,
+                8588873,
+                "Ecublens VD, Pontet"
+            ],
+            [
+                23.5,
+                8591954,
+                "Ecublens VD, Perrettes"
+            ],
+            [
+                23.5,
+                8591961,
+                "Ecublens VD, Villars"
+            ],
+            [
+                25.0,
+                8591949,
+                "Ecublens VD, En Enjalin"
+            ],
+            [
+                26.0,
+                8591956,
+                "Ecublens VD, Renges"
+            ],
+            [
+                27.5,
+                8591959,
+                "Ecublens VD, Champs-Courbes"
+            ],
+            [
+                27.5,
+                8594890,
+                "Ecublens VD, Montaney"
+            ],
+            [
+                29.0,
+                8594988,
+                "St-Sulpice VD, Venoge nord"
+            ]
+        ]
+    },
+    {
+        "name": "35",
+        "stops": [
+            [
+                1.0,
+                8581914,
+                "Bussigny, gare"
+            ],
+            [
+                2.0,
+                8581918,
+                "Bussigny, Grand-Record"
+            ],
+            [
+                3.5,
+                8506907,
+                "Bussigny, Jordil"
+            ],
+            [
+                3.5,
+                8505529,
+                "Bussigny, St-Germain"
+            ],
+            [
+                5.0,
+                8506905,
+                "Bussigny, Tatironne"
+            ],
+            [
+                6.0,
+                8506903,
+                "Bussigny, Sottelles"
+            ],
+            [
+                7.0,
+                8581920,
+                "Bussigny, Sauge"
+            ],
+            [
+                8.0,
+                8581921,
+                "Bussigny, Vieux-Four"
+            ],
+            [
+                9.0,
+                8581916,
+                "Bussigny, Cond\u00e9mine"
+            ],
+            [
+                10.0,
+                8594177,
+                "Bussigny, Cocagne"
+            ],
+            [
+                11.0,
+                8581924,
+                "Bussigny, Sullens"
+            ],
+            [
+                12.0,
+                8581922,
+                "Bussigny, Riettaz"
+            ]
+        ]
+    },
+    {
+        "name": "36",
+        "stops": [
+            [
+                1.0,
+                8591936,
+                "Crissier, Closalet"
+            ],
+            [
+                2.0,
+                8593817,
+                "Crissier, Feleire"
+            ],
+            [
+                3.0,
+                8595986,
+                "Crissier, Lentilli\u00e8res"
+            ],
+            [
+                4.0,
+                8595516,
+                "Crissier, Mongevon"
+            ],
+            [
+                5.0,
+                8593816,
+                "Crissier, Marcolet"
+            ],
+            [
+                6.0,
+                8591939,
+                "Crissier, Zinguerie"
+            ],
+            [
+                7.0,
+                8593815,
+                "Crissier, Jura"
+            ],
+            [
+                8.0,
+                8588838,
+                "Renens VD, gare nord"
+            ]
+        ]
+    },
+    {
+        "name": "38",
+        "stops": [
+            [
+                1.0,
+                8592202,
+                "Renens VD, Avenir"
+            ],
+            [
+                2.5,
+                8510421,
+                "Crissier, Chicor\u00e9e"
+            ],
+            [
+                2.5,
+                8588839,
+                "Renens VD, 14 Avril"
+            ],
+            [
+                4.0,
+                8592214,
+                "Renens VD, Industrie"
+            ],
+            [
+                5.0,
+                8592201,
+                "Renens VD, 1er Mai"
+            ],
+            [
+                6.5,
+                8592205,
+                "Renens VD, Borjod"
+            ],
+            [
+                6.5,
+                8592220,
+                "Renens VD, Saugiaz"
+            ],
+            [
+                8.0,
+                8592212,
+                "Renens VD, Follieu"
+            ],
+            [
+                9.0,
+                8592206,
+                "Renens VD, Bourg-Dessus"
+            ],
+            [
+                10.0,
+                8592178,
+                "Prilly, \u00e9glise"
+            ]
+        ]
+    },
+    {
+        "name": "4",
+        "stops": [
+            [
+                1.5,
+                8592043,
+                "Lausanne, Faverges"
+            ],
+            [
+                1.5,
+                8592012,
+                "Lausanne, chemin du Cap"
+            ],
+            [
+                3.0,
+                8591999,
+                "Lausanne, Bonne-Esp\u00e9rance"
+            ],
+            [
+                4.0,
+                8591981,
+                "Lausanne, avenue du L\u00e9man"
+            ],
+            [
+                5.0,
+                8592038,
+                "Lausanne, Eglantine"
+            ],
+            [
+                6.0,
+                8592051,
+                "Lausanne, Georgette"
+            ],
+            [
+                7.0,
+                8579254,
+                "Lausanne, St-Fran\u00e7ois"
+            ],
+            [
+                8.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                9.0,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                10.0,
+                8592035,
+                "Lausanne, Ecole Commerce"
+            ],
+            [
+                11.0,
+                8591980,
+                "Lausanne, Aub\u00e9pines"
+            ],
+            [
+                12.0,
+                8592032,
+                "Lausanne, Dranse"
+            ],
+            [
+                13.5,
+                8592107,
+                "Lausanne, Rapille"
+            ],
+            [
+                13.5,
+                8591993,
+                "Lausanne, B\u00e9thanie"
+            ],
+            [
+                15.0,
+                8592187,
+                "Prilly, Mont-Goulin"
+            ],
+            [
+                16.0,
+                8592176,
+                "Prilly, Coudraie"
+            ]
+        ]
+    },
+    {
+        "name": "41",
+        "stops": [
+            [
+                1.5,
+                8592081,
+                "Lausanne, Montolieu"
+            ],
+            [
+                1.5,
+                8592018,
+                "Lausanne, Cigale"
+            ],
+            [
+                3.0,
+                8591977,
+                "Lausanne, Abeilles"
+            ],
+            [
+                4.0,
+                8591997,
+                "Lausanne, Boissonnet"
+            ],
+            [
+                5.0,
+                8592099,
+                "Lausanne, Praz-Berthoud"
+            ],
+            [
+                6.0,
+                8579238,
+                "Lausanne, Sallaz"
+            ],
+            [
+                7.0,
+                8592118,
+                "Lausanne, St-Etienne"
+            ],
+            [
+                8.0,
+                8592127,
+                "Lausanne, Valmont"
+            ],
+            [
+                9.0,
+                8579245,
+                "Lausanne, Foyer"
+            ],
+            [
+                10.0,
+                8592002,
+                "Lausanne, Boveresses"
+            ],
+            [
+                11.0,
+                8592101,
+                "Lausanne, Praz-S\u00e9chaud"
+            ]
+        ]
+    },
+    {
+        "name": "42",
+        "stops": [
+            [
+                2.0,
+                8592065,
+                "Lausanne, Les Chavannes"
+            ],
+            [
+                2.0,
+                8592025,
+                "Lausanne, Craivavers"
+            ],
+            [
+                2.0,
+                8579245,
+                "Lausanne, Foyer"
+            ],
+            [
+                4.0,
+                8592112,
+                "Lausanne, Rozav\u00e8re"
+            ],
+            [
+                5.0,
+                8579255,
+                "Lausanne, Pont-de-Chailly"
+            ],
+            [
+                6.0,
+                8592031,
+                "Lausanne, Devin"
+            ],
+            [
+                7.0,
+                8592008,
+                "Lausanne, Champ-Rond"
+            ],
+            [
+                8.0,
+                8579238,
+                "Lausanne, Sallaz"
+            ]
+        ]
+    },
+    {
+        "name": "45",
+        "stops": [
+            [
+                1.0,
+                8591964,
+                "Epalinges, Bois-Murat"
+            ],
+            [
+                2.0,
+                8591971,
+                "Epalinges, Tuileries"
+            ],
+            [
+                3.0,
+                8579239,
+                "Epalinges, Croisettes"
+            ],
+            [
+                4.0,
+                8589525,
+                "Epalinges, Planches"
+            ],
+            [
+                5.0,
+                8591966,
+                "Epalinges, Croix-Blanche"
+            ],
+            [
+                6.0,
+                8593821,
+                "Epalinges, Marcel Regamey"
+            ],
+            [
+                7.0,
+                8587546,
+                "Epalinges, Lion d'Or"
+            ],
+            [
+                8.0,
+                8591968,
+                "Epalinges, Grand Chemin"
+            ],
+            [
+                9.0,
+                8504171,
+                "Lausanne, En Marin"
+            ],
+            [
+                10.5,
+                8587549,
+                "Lausanne, Vulliette"
+            ],
+            [
+                10.5,
+                8592037,
+                "Lausanne, Cojonnex/EHL"
+            ],
+            [
+                12.0,
+                8592070,
+                "Lausanne, Mauvernay"
+            ],
+            [
+                13.0,
+                8587929,
+                "Lausanne, Chalet-\u00e0-Gobet"
+            ]
+        ]
+    },
+    {
+        "name": "46",
+        "stops": [
+            [
+                1.0,
+                8591964,
+                "Epalinges, Bois-Murat"
+            ],
+            [
+                2.0,
+                8591971,
+                "Epalinges, Tuileries"
+            ],
+            [
+                3.0,
+                8579239,
+                "Epalinges, Croisettes"
+            ],
+            [
+                4.0,
+                8589525,
+                "Epalinges, Planches"
+            ],
+            [
+                5.5,
+                8591966,
+                "Epalinges, Croix-Blanche"
+            ],
+            [
+                5.5,
+                8591965,
+                "Epalinges, Girarde"
+            ],
+            [
+                7.0,
+                8591967,
+                "Epalinges, En Praz Bin"
+            ],
+            [
+                8.5,
+                8591963,
+                "Epalinges, Biolleyre"
+            ],
+            [
+                8.5,
+                8591969,
+                "Epalinges, Polny"
+            ],
+            [
+                10.0,
+                8591962,
+                "Epalinges, Ball\u00e8gue"
+            ]
+        ]
+    },
+    {
+        "name": "47",
+        "stops": [
+            [
+                1.5,
+                8588453,
+                "Aran, Pra Forny"
+            ],
+            [
+                1.5,
+                8588454,
+                "Grandvaux, Pra Grana"
+            ],
+            [
+                3.0,
+                8588452,
+                "Lutry, Jordillon"
+            ],
+            [
+                4.0,
+                8588451,
+                "Lutry, Sapelle"
+            ],
+            [
+                5.5,
+                8579260,
+                "Lutry, Croix/Lutry"
+            ],
+            [
+                5.5,
+                8588438,
+                "Lutry, Echerins"
+            ],
+            [
+                7.0,
+                8579259,
+                "Lutry, Landar"
+            ],
+            [
+                8.0,
+                8579258,
+                "Belmont-sur-L., Blessoney"
+            ],
+            [
+                9.5,
+                8579257,
+                "Belmont-sur-L., centre"
+            ],
+            [
+                9.5,
+                8588436,
+                "Belmont-sur-L., Grands Champs"
+            ],
+            [
+                11.0,
+                8588435,
+                "Pully, Chenaulaz"
+            ],
+            [
+                12.0,
+                8579256,
+                "Pully, Val-Vert"
+            ],
+            [
+                13.5,
+                8588450,
+                "Pully, Pr\u00e9 Pariset"
+            ],
+            [
+                13.5,
+                8588449,
+                "Pully, Vallon"
+            ],
+            [
+                15.5,
+                8588447,
+                "Pully, Rochettaz"
+            ],
+            [
+                15.5,
+                8588448,
+                "Pully, Boverattes"
+            ],
+            [
+                17.0,
+                8588446,
+                "Pully, Clerg\u00e8re"
+            ],
+            [
+                18.0,
+                8588445,
+                "Pully, gare"
+            ],
+            [
+                19.5,
+                8588443,
+                "Pully, Pr\u00e9au"
+            ],
+            [
+                19.5,
+                8588442,
+                "Pully, Osches"
+            ],
+            [
+                21.0,
+                8588441,
+                "Pully, Ch\u00e2taignier"
+            ],
+            [
+                22.0,
+                8588440,
+                "Pully, Somais"
+            ],
+            [
+                23.0,
+                8588439,
+                "Pully, port"
+            ]
+        ]
+    },
+    {
+        "name": "48",
+        "stops": [
+            [
+                1.0,
+                8588445,
+                "Pully, gare"
+            ],
+            [
+                2.0,
+                8592188,
+                "Pully, Montillier"
+            ],
+            [
+                3.0,
+                8592190,
+                "Pully, Perraudettaz"
+            ],
+            [
+                4.0,
+                8592196,
+                "Pully, Roses"
+            ],
+            [
+                5.0,
+                8592183,
+                "Pully, Les Liaudes"
+            ],
+            [
+                6.0,
+                8592191,
+                "Pully, Pavillard"
+            ],
+            [
+                7.0,
+                8592185,
+                "Pully, Margerol"
+            ],
+            [
+                8.0,
+                8588434,
+                "Pully, Rosiaz"
+            ],
+            [
+                9.0,
+                8592171,
+                "Pully, Bruy\u00e8re"
+            ],
+            [
+                10.0,
+                8592177,
+                "Pully, Daillettes"
+            ]
+        ]
+    },
+    {
+        "name": "49",
+        "stops": [
+            [
+                1.5,
+                8595625,
+                "Belmont-sur-L., P\u00e2quis"
+            ],
+            [
+                1.5,
+                8588436,
+                "Belmont-sur-L., Grands Champs"
+            ],
+            [
+                3.0,
+                8593806,
+                "Belmont-sur-L., Rouv\u00e8ne"
+            ],
+            [
+                4.0,
+                8593798,
+                "Belmont-sur-L., Burenoz"
+            ],
+            [
+                5.0,
+                8593795,
+                "Belmont-sur-L., Chaffeises"
+            ],
+            [
+                6.5,
+                8595191,
+                "Pully,Centre Sportif Rochettaz"
+            ],
+            [
+                6.5,
+                8593850,
+                "Pully, Caudoz"
+            ],
+            [
+                8.0,
+                8595192,
+                "Pully, Ruisselet"
+            ],
+            [
+                9.0,
+                8588446,
+                "Pully, Clerg\u00e8re"
+            ]
+        ]
+    },
+    {
+        "name": "54",
+        "stops": [
+            [
+                1.0,
+                8588838,
+                "Renens VD, gare nord"
+            ],
+            [
+                2.0,
+                8593815,
+                "Crissier, Jura"
+            ],
+            [
+                3.0,
+                8591939,
+                "Crissier, Zinguerie"
+            ],
+            [
+                4.0,
+                8593816,
+                "Crissier, Marcolet"
+            ],
+            [
+                5.0,
+                8595148,
+                "Crissier, Chisaz"
+            ],
+            [
+                6.0,
+                8588843,
+                "Crissier, centre"
+            ],
+            [
+                7.0,
+                8588845,
+                "Crissier, Timonet"
+            ],
+            [
+                8.0,
+                8595147,
+                "Cheseaux-sur-L., Ch\u00e2telard"
+            ],
+            [
+                9.0,
+                8591940,
+                "Cugy VD, Cavenette"
+            ],
+            [
+                10.0,
+                8592139,
+                "Le Mont-sur-L., Budron"
+            ],
+            [
+                11.0,
+                8592142,
+                "Le Mont-sur-L., Foug\u00e8res"
+            ],
+            [
+                12.0,
+                8592141,
+                "Le Mont-sur-L., Etavez"
+            ],
+            [
+                13.0,
+                8504177,
+                "Le Mont-sur-L., Grand-Mont"
+            ]
+        ]
+    },
+    {
+        "name": "56",
+        "stops": [
+            [
+                1.0,
+                8581914,
+                "Bussigny, gare"
+            ],
+            [
+                2.0,
+                8581918,
+                "Bussigny, Grand-Record"
+            ],
+            [
+                3.0,
+                8505529,
+                "Bussigny, St-Germain"
+            ],
+            [
+                4.0,
+                8583891,
+                "Vufflens-Aclens, zone industr."
+            ],
+            [
+                5.0,
+                8593782,
+                "Vufflens-la-Ville, gare"
+            ],
+            [
+                6.0,
+                8593781,
+                "Vufflens-la-Ville, \u00e9glise"
+            ],
+            [
+                7.0,
+                8594270,
+                "Mex VD, Faraz"
+            ]
+        ]
+    },
+    {
+        "name": "58",
+        "stops": [
+            [
+                1.0,
+                8581914,
+                "Bussigny, gare"
+            ],
+            [
+                2.0,
+                8581918,
+                "Bussigny, Grand-Record"
+            ],
+            [
+                3.0,
+                8581917,
+                "Bussigny, Dallaz"
+            ],
+            [
+                4.0,
+                8506903,
+                "Bussigny, Sottelles"
+            ],
+            [
+                5.0,
+                8594178,
+                "Bussigny, Rente"
+            ],
+            [
+                6.0,
+                8588850,
+                "Mex VD, Les Esserts"
+            ],
+            [
+                7.0,
+                8588851,
+                "Mex VD, Tr\u00e9sy"
+            ],
+            [
+                8.0,
+                8588853,
+                "Mex VD, village"
+            ],
+            [
+                9.0,
+                8593781,
+                "Vufflens-la-Ville, \u00e9glise"
+            ]
+        ]
+    },
+    {
+        "name": "6",
+        "stops": [
+            [
+                1.0,
+                8592101,
+                "Lausanne, Praz-S\u00e9chaud"
+            ],
+            [
+                2.0,
+                8592002,
+                "Lausanne, Boveresses"
+            ],
+            [
+                3.5,
+                8592127,
+                "Lausanne, Valmont"
+            ],
+            [
+                3.5,
+                8579245,
+                "Lausanne, Foyer"
+            ],
+            [
+                5.0,
+                8592118,
+                "Lausanne, St-Etienne"
+            ],
+            [
+                6.0,
+                8579238,
+                "Lausanne, Sallaz"
+            ],
+            [
+                7.0,
+                8592131,
+                "Lausanne, Victor-Ruffy"
+            ],
+            [
+                8.0,
+                8592126,
+                "Lausanne, Vallonnette"
+            ],
+            [
+                9.5,
+                8592136,
+                "Lausanne, Virgile-Rossel"
+            ],
+            [
+                9.5,
+                8591978,
+                "Lausanne, Alli\u00e8res/CHUV"
+            ],
+            [
+                11.0,
+                8588431,
+                "Lausanne, B\u00e9thusy"
+            ],
+            [
+                12.0,
+                8579237,
+                "Lausanne, Ours"
+            ],
+            [
+                13.0,
+                8589523,
+                "Lausanne, Bessi\u00e8res"
+            ],
+            [
+                14.0,
+                8579254,
+                "Lausanne, St-Fran\u00e7ois"
+            ],
+            [
+                15.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                16.5,
+                8592096,
+                "Lausanne, Pont Chauderon"
+            ],
+            [
+                16.5,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                18.0,
+                8592004,
+                "Lausanne, C\u00e9cil"
+            ],
+            [
+                19.0,
+                8592097,
+                "Lausanne, Pont Marc Dufour"
+            ],
+            [
+                20.0,
+                8592064,
+                "Lausanne, Languedoc"
+            ],
+            [
+                21.5,
+                8592075,
+                "Lausanne, Mont d'Or"
+            ],
+            [
+                21.5,
+                8592046,
+                "Lausanne, Fontenay"
+            ],
+            [
+                23.0,
+                8592044,
+                "Lausanne, Figuiers"
+            ],
+            [
+                24.0,
+                8592080,
+                "Lausanne, Montoie"
+            ],
+            [
+                25.0,
+                8592068,
+                "Lausanne, Maladi\u00e8re"
+            ]
+        ]
+    },
+    {
+        "name": "60",
+        "stops": [
+            [
+                1.0,
+                8592050,
+                "Lausanne, gare"
+            ],
+            [
+                2.0,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                3.0,
+                8590442,
+                "Lausanne, Riponne-M. B\u00e9jart"
+            ],
+            [
+                4.0,
+                8504176,
+                "Lausanne, Tunnel"
+            ],
+            [
+                5.0,
+                8587357,
+                "Lausanne, Bellevaux"
+            ],
+            [
+                6.0,
+                8593845,
+                "Le Mont-sur-L., Coppoz-Poste"
+            ],
+            [
+                7.5,
+                8504177,
+                "Le Mont-sur-L., Grand-Mont"
+            ],
+            [
+                7.5,
+                8592141,
+                "Le Mont-sur-L., Etavez"
+            ],
+            [
+                9.0,
+                8592142,
+                "Le Mont-sur-L., Foug\u00e8res"
+            ],
+            [
+                10.0,
+                8592139,
+                "Le Mont-sur-L., Budron"
+            ],
+            [
+                11.0,
+                8591940,
+                "Cugy VD, Cavenette"
+            ]
+        ]
+    },
+    {
+        "name": "64",
+        "stops": [
+            [
+                1.0,
+                8587549,
+                "Lausanne, Vulliette"
+            ],
+            [
+                2.0,
+                8592037,
+                "Lausanne, Cojonnex/EHL"
+            ],
+            [
+                3.0,
+                8592070,
+                "Lausanne, Mauvernay"
+            ],
+            [
+                4.0,
+                8587929,
+                "Lausanne, Chalet-\u00e0-Gobet"
+            ],
+            [
+                5.5,
+                8592015,
+                "Lausanne, Chevreuils"
+            ],
+            [
+                5.5,
+                8592100,
+                "Lausanne, Praz-Collet"
+            ],
+            [
+                7.5,
+                8587548,
+                "Lausanne, Vers-chez-les-Blanc"
+            ],
+            [
+                7.5,
+                8592073,
+                "Lausanne, Molliettes"
+            ],
+            [
+                9.0,
+                8587547,
+                "Lausanne, Chalet \u00e0 Matthey"
+            ],
+            [
+                10.0,
+                8592058,
+                "Lausanne, Haute Combe"
+            ],
+            [
+                11.0,
+                8587550,
+                "Montblesson, Perronnaz"
+            ],
+            [
+                12.0,
+                8591970,
+                "Epalinges, Pr\u00e9-d'Yverdon"
+            ],
+            [
+                13.0,
+                8589525,
+                "Epalinges, Planches"
+            ],
+            [
+                14.0,
+                8579239,
+                "Epalinges, Croisettes"
+            ]
+        ]
+    },
+    {
+        "name": "68",
+        "stops": [
+            [
+                1.5,
+                8588438,
+                "Lutry, Echerins"
+            ],
+            [
+                1.5,
+                8579260,
+                "Lutry, Croix/Lutry"
+            ],
+            [
+                3.0,
+                8579259,
+                "Lutry, Landar"
+            ],
+            [
+                4.0,
+                8592152,
+                "Lutry, Corsy-Dessus"
+            ],
+            [
+                5.0,
+                8592147,
+                "Lutry, Br\u00fbl\u00e9es"
+            ],
+            [
+                6.0,
+                8592159,
+                "Lutry, Ponfilet"
+            ],
+            [
+                7.0,
+                8592157,
+                "Lutry, Marionnettes"
+            ],
+            [
+                8.0,
+                8592149,
+                "Lutry, Corsy-Dessous"
+            ],
+            [
+                9.5,
+                8591976,
+                "La Conversion, gare"
+            ],
+            [
+                9.5,
+                8592151,
+                "Lutry, Colline"
+            ],
+            [
+                11.5,
+                8592145,
+                "Lutry, avenue William"
+            ],
+            [
+                11.5,
+                8592158,
+                "Lutry, Orzens"
+            ],
+            [
+                13.0,
+                8592154,
+                "Lutry, Les Champs"
+            ],
+            [
+                14.0,
+                8592164,
+                "Lutry, Voisinand"
+            ],
+            [
+                15.0,
+                8593861,
+                "Lutry, gare"
+            ]
+        ]
+    },
+    {
+        "name": "69",
+        "stops": [
+            [
+                1.0,
+                8592156,
+                "Lutry, port"
+            ],
+            [
+                2.0,
+                8592154,
+                "Lutry, Les Champs"
+            ],
+            [
+                3.0,
+                8593861,
+                "Lutry, gare"
+            ],
+            [
+                4.0,
+                8592162,
+                "Lutry, Savuit-place"
+            ],
+            [
+                5.5,
+                8593856,
+                "Lutry, Bossi\u00e8res"
+            ],
+            [
+                5.5,
+                8592153,
+                "Lutry, Gravesse"
+            ],
+            [
+                7.0,
+                8592146,
+                "Lutry, Br\u00e9laz"
+            ],
+            [
+                8.0,
+                8592161,
+                "Lutry, Savoie"
+            ],
+            [
+                9.5,
+                8579260,
+                "Lutry, Croix/Lutry"
+            ],
+            [
+                9.5,
+                8588438,
+                "Lutry, Echerins"
+            ],
+            [
+                11.0,
+                8579259,
+                "Lutry, Landar"
+            ]
+        ]
+    },
+    {
+        "name": "7",
+        "stops": [
+            [
+                1.0,
+                8579256,
+                "Pully, Val-Vert"
+            ],
+            [
+                2.0,
+                8588434,
+                "Pully, Rosiaz"
+            ],
+            [
+                3.0,
+                8592023,
+                "Lausanne, Coudrette"
+            ],
+            [
+                4.0,
+                8588432,
+                "Lausanne, Chailly-Village"
+            ],
+            [
+                5.0,
+                8579255,
+                "Lausanne, Pont-de-Chailly"
+            ],
+            [
+                6.0,
+                8592042,
+                "Lausanne, Fauconni\u00e8res"
+            ],
+            [
+                7.0,
+                8588431,
+                "Lausanne, B\u00e9thusy"
+            ],
+            [
+                8.0,
+                8579237,
+                "Lausanne, Ours"
+            ],
+            [
+                9.0,
+                8510575,
+                "Lausanne, C\u00e9sar-Roux"
+            ],
+            [
+                10.0,
+                8504176,
+                "Lausanne, Tunnel"
+            ],
+            [
+                11.0,
+                8590442,
+                "Lausanne, Riponne-M. B\u00e9jart"
+            ],
+            [
+                12.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                13.5,
+                8592001,
+                "Lausanne, Boston"
+            ],
+            [
+                13.5,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                15.0,
+                8592109,
+                "Lausanne, Recordon"
+            ],
+            [
+                16.0,
+                8592102,
+                "Lausanne, Pr\u00e9laz"
+            ],
+            [
+                17.0,
+                8592103,
+                "Lausanne, Pr\u00e9laz-les-Roses"
+            ],
+            [
+                18.0,
+                8592049,
+                "Prilly, Galicien"
+            ],
+            [
+                19.0,
+                8510543,
+                "Prilly, Galicien/ar\u00e9na"
+            ]
+        ]
+    },
+    {
+        "name": "8",
+        "stops": [
+            [
+                1.5,
+                8588443,
+                "Pully, Pr\u00e9au"
+            ],
+            [
+                1.5,
+                8588445,
+                "Pully, gare"
+            ],
+            [
+                3.0,
+                8592182,
+                "Pully, Joliette"
+            ],
+            [
+                4.5,
+                8592193,
+                "Pully, Pierraz-Portay"
+            ],
+            [
+                4.5,
+                8592172,
+                "Pully, C. F. Ramuz"
+            ],
+            [
+                6.0,
+                8592186,
+                "Pully, M\u00e9tairie"
+            ],
+            [
+                7.5,
+                8592077,
+                "Lausanne, Montchoisi"
+            ],
+            [
+                7.5,
+                8592062,
+                "Lausanne, Jurigoz"
+            ],
+            [
+                9.0,
+                8591979,
+                "Lausanne, Alpes"
+            ],
+            [
+                10.0,
+                8592051,
+                "Lausanne, Georgette"
+            ],
+            [
+                11.0,
+                8579254,
+                "Lausanne, St-Fran\u00e7ois"
+            ],
+            [
+                12.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                13.0,
+                8590442,
+                "Lausanne, Riponne-M. B\u00e9jart"
+            ],
+            [
+                14.5,
+                8504176,
+                "Lausanne, Tunnel"
+            ],
+            [
+                14.5,
+                8592071,
+                "Lausanne, M\u00e9mise"
+            ],
+            [
+                16.0,
+                8592053,
+                "Lausanne, Grande-Borde"
+            ],
+            [
+                17.0,
+                8592132,
+                "Lausanne, Vieux-Moulin"
+            ],
+            [
+                18.5,
+                8592082,
+                "Lausanne, Motte"
+            ],
+            [
+                18.5,
+                8592111,
+                "Lausanne, Rouvraie"
+            ],
+            [
+                20.0,
+                8592047,
+                "Lausanne, For\u00eat"
+            ],
+            [
+                21.5,
+                8592055,
+                "Lausanne, Grangette"
+            ],
+            [
+                21.5,
+                8587357,
+                "Lausanne, Bellevaux"
+            ],
+            [
+                23.5,
+                8593249,
+                "Le Mont-sur-L., Rionzi"
+            ],
+            [
+                23.5,
+                8592143,
+                "Le Mont-sur-L., Martines"
+            ],
+            [
+                25.0,
+                8592140,
+                "Le Mont-sur-L., C\u00f4tes"
+            ],
+            [
+                26.5,
+                8593845,
+                "Le Mont-sur-L., Coppoz-Poste"
+            ],
+            [
+                26.5,
+                8587853,
+                "Le Mont-sur-L., Petit-Mont"
+            ],
+            [
+                28.0,
+                8579235,
+                "Le Mont-sur-L., Coppoz"
+            ],
+            [
+                29.0,
+                8504177,
+                "Le Mont-sur-L., Grand-Mont"
+            ]
+        ]
+    },
+    {
+        "name": "9",
+        "stops": [
+            [
+                1.5,
+                8592192,
+                "Prilly, Perr\u00e9az"
+            ],
+            [
+                1.5,
+                8592178,
+                "Prilly, \u00e9glise"
+            ],
+            [
+                3.0,
+                8592173,
+                "Prilly, centre"
+            ],
+            [
+                4.0,
+                8592181,
+                "Prilly, Huttins"
+            ],
+            [
+                5.0,
+                8592124,
+                "Lausanne, Valency"
+            ],
+            [
+                6.0,
+                8592078,
+                "Lausanne, Mont\u00e9tan"
+            ],
+            [
+                7.0,
+                8592119,
+                "Lausanne, St-Paul"
+            ],
+            [
+                8.0,
+                8592001,
+                "Lausanne, Boston"
+            ],
+            [
+                9.0,
+                8592010,
+                "Lausanne, Chauderon"
+            ],
+            [
+                10.0,
+                8591988,
+                "Lausanne, Bel-Air"
+            ],
+            [
+                11.0,
+                8579254,
+                "Lausanne, St-Fran\u00e7ois"
+            ],
+            [
+                12.0,
+                8592051,
+                "Lausanne, Georgette"
+            ],
+            [
+                13.5,
+                8592038,
+                "Lausanne, Eglantine"
+            ],
+            [
+                13.5,
+                8591981,
+                "Lausanne, avenue du L\u00e9man"
+            ],
+            [
+                15.0,
+                8591999,
+                "Lausanne, Bonne-Esp\u00e9rance"
+            ],
+            [
+                16.0,
+                8592190,
+                "Pully, Perraudettaz"
+            ],
+            [
+                17.0,
+                8592188,
+                "Pully, Montillier"
+            ],
+            [
+                18.0,
+                8588446,
+                "Pully, Clerg\u00e8re"
+            ],
+            [
+                19.0,
+                8592195,
+                "Pully, Reymondin"
+            ],
+            [
+                20.5,
+                8592169,
+                "Paudex, village"
+            ],
+            [
+                20.5,
+                8592189,
+                "Pully, Moulins"
+            ],
+            [
+                22.0,
+                8592167,
+                "Paudex, Marronnier"
+            ],
+            [
+                23.0,
+                8592150,
+                "Lutry, Grand-Pont"
+            ],
+            [
+                24.5,
+                8592164,
+                "Lutry, Voisinand"
+            ],
+            [
+                24.5,
+                8592160,
+                "Lutry, Rive"
+            ],
+            [
+                26.0,
+                8592155,
+                "Lutry, Corniche"
+            ]
+        ]
+    },
+    {
+        "name": "m1",
+        "stops": [
+            [
+                1.0,
+                8591818,
+                "Lausanne-Flon, pl. de l'Europe"
+            ],
+            [
+                2.0,
+                8592133,
+                "Lausanne, Vigie"
+            ],
+            [
+                3.0,
+                8501207,
+                "Lausanne, Montelly"
+            ],
+            [
+                4.0,
+                8501208,
+                "Lausanne, Provence"
+            ],
+            [
+                5.0,
+                8501209,
+                "Lausanne, Malley"
+            ],
+            [
+                6.0,
+                8501210,
+                "Lausanne, Bourdonnette"
+            ],
+            [
+                7.0,
+                8501211,
+                "Chavannes-R., UNIL-Chamberonne"
+            ],
+            [
+                8.0,
+                8501212,
+                "Chavannes-R., UNIL-Mouline"
+            ],
+            [
+                9.0,
+                8501213,
+                "Ecublens VD, UNIL-Sorge"
+            ],
+            [
+                10.0,
+                8501214,
+                "Ecublens VD, EPFL"
+            ],
+            [
+                11.0,
+                8501215,
+                "Ecublens VD, Bassenges"
+            ],
+            [
+                12.0,
+                8501216,
+                "Ecublens VD, Cerisaie"
+            ],
+            [
+                13.0,
+                8501217,
+                "Chavannes-R., Crochy"
+            ],
+            [
+                14.0,
+                8501218,
+                "Ecublens VD, Epenex"
+            ],
+            [
+                15.0,
+                8530749,
+                "Renens VD, gare"
+            ]
+        ]
+    }
+]

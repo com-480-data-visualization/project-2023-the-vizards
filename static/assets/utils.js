@@ -1,4 +1,8 @@
 
+const DEPARTURE_DELAY_COLOR = "#ff6600"
+const ARRIVAL_DELAY_COLOR = "#1f77b4"
+
+
 function hideAllDelay(delaysMesh) {
     for (let key in delaysMesh) {
         delaysMesh[key].forEach(function (geometry) {
@@ -16,16 +20,17 @@ function hideAllLines(linesMesh) {
 }
 
 function showAllLines(linesMesh) {
-    var selectedLine = document.getElementById('lineSelect').value;
+    //var selectedLine = document.getElementById('lineSelect').value;
 
     for (let key in linesMesh) {
-        let visible = (key === selectedLine);
+        //let visible = (key === selectedLine);
         linesMesh[key].forEach(function (geometry) {
-            if (visible) return;
+            //if (visible) return;
             threeLayer.addMesh(geometry);
         });
     }
 }
+
 
 function updateVisibilityLine(linesMesh, delaysMesh) {
     var selectedLine = document.getElementById('lineSelect').value;
@@ -69,9 +74,10 @@ function loadDelays() {
                 var arrival_delay = threeLayer.toExtrudePolygon(feature, {
                     height: (feature.properties.arrival_delay > 0 ? feature.properties.arrival_delay * 10 : 0) + 0.01,
                     altitude: 0,
-                    delay: feature.properties.arrival_delay
+                    arrival_delay: feature.properties.arrival_delay,
+                    stop_name: feature.properties.stop_name,
                 }, new THREE.MeshPhongMaterial({
-                    color: '#f00',
+                    color: ARRIVAL_DELAY_COLOR,
                     opacity: 1,
                     transparent: false,
                     side: 'DoubleSide'
@@ -80,9 +86,10 @@ function loadDelays() {
                 var departure_delay = threeLayer.toExtrudePolygon(feature, {
                     height: feature.properties.departure_delay > 0 ? feature.properties.departure_delay * 10 : 0.02,
                     altitude: (feature.properties.arrival_delay > 0 ? feature.properties.arrival_delay * 10 : 0) + 0.01,
-                    delay: feature.properties.departure_delay,
+                    departure_delay: feature.properties.departure_delay,
+                    stop_name: feature.properties.stop_name,
                 }, new THREE.MeshPhongMaterial({
-                    color: '#00f',
+                    color: DEPARTURE_DELAY_COLOR,
                     opacity: 1,
                     transparent: false,
                     side: 'DoubleSide'
@@ -100,7 +107,8 @@ function loadDelays() {
                 if (i == geojson.features.length - 1) {
                     resolve({
                         delaysMesh: delaysMesh,
-                        linesWithDelays: linesWithDelays
+                        linesWithDelays: linesWithDelays,
+                        delaysData: geojson.features
                     })
                 }
             });
@@ -126,7 +134,8 @@ function loadLines() {
                 }
                 const mesh = threeLayer.toExtrudeLine(line, {
                     width: 15 + i * 0.01,
-                    height: 1 + i * 0.01
+                    height: 1 + i * 0.01,
+                    line_name: feature.properties.line,
                 }, new THREE.MeshPhongMaterial({
                     color: feature.properties.color
                 }));
@@ -169,6 +178,9 @@ function updateTable(data, linesMesh, optionsLines) {
     var tbody = table.getElementsByTagName('tbody')[0];
     tbody.innerHTML = '';
 
+    handleHighlight(linesMesh, undefined);
+    centerGlobal()
+
     for (var i = 0; i < filteredData.length; i++) {
         var row = document.createElement('tr');
 
@@ -204,13 +216,22 @@ function updateTable(data, linesMesh, optionsLines) {
             return function () {
                 var lineName = this.dataset.line;
 
+                if (this.disabled) return;
+
                 unhighlightChampionship(optionsLines)
 
-                handleHighlight(linesMesh, lineName);
+                if (this.selected) {
+                    handleHighlight(linesMesh, undefined);
+                    centerGlobal()
+                    this.selected = false;
+                    return
+                } else {
+                    this.selected = true;
+                    handleHighlight(linesMesh, lineName);
+                    hightlightRow(this, optionsLines, lineName)
+                    this.classList.add('selected');
+                }
 
-                if (this.disabled) return;
-                hightlightRow(this, optionsLines, lineName)
-                this.classList.add('selected');
 
 
 
@@ -291,6 +312,10 @@ function loadChampionship(linesMesh, optionsLines) {
 
 function handleHighlight(linesMesh, lineName) {
 
+    if (!lineName) {
+        disableAllHighlights(linesMesh)
+        return
+    }
     for (var line in linesMesh) {
         if (line == lineName) {
             highlightLine(linesMesh, lineName);
@@ -305,17 +330,39 @@ function highlightLine(linesMesh, lineName) {
     if (!linesMesh[lineName]) return;
     linesMesh[lineName].forEach(function (mesh) {
         centerOnLine(mesh)
+        mesh.setSymbol(new THREE.MeshPhongMaterial({
+            color: mesh.getSymbol().color,
+            opacity: 1,
+            transparent: false
+        }))
         mesh.object3d.position.z = 1
-        console.log(mesh)
+
     });
 }
 
 function removeHighlight(linesMesh, lineName) {
-    // Highlight the selected line
     if (!linesMesh[lineName]) return;
     linesMesh[lineName].forEach(function (mesh) {
+        mesh.setSymbol(new THREE.MeshPhongMaterial({
+            color: mesh.getSymbol().color,
+            opacity: 0.3,
+            transparent: true
+        }))
         mesh.object3d.position.z = 0
     });
+}
+
+function disableAllHighlights(linesMesh) {
+    for (var line in linesMesh) {
+        linesMesh[line].forEach(function (mesh) {
+            mesh.setSymbol(new THREE.MeshPhongMaterial({
+                color: mesh.getSymbol().color,
+                opacity: 1,
+                transparent: false
+            }))
+            mesh.object3d.position.z = 0
+        });
+    }
 }
 
 function createLineSelect(displayableLines, linesWithDelays) {
@@ -385,7 +432,7 @@ function centerOnLine(lineMesh) {
     avgLng /= vertices.length;
 
     // If overlay on the side, add additional space on the side
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > MAX_MOBILE_WIDTH) {
         // Calculate the width of the overlay in degrees
         var windowWidth = window.innerWidth;
         var overlayWidth = document.getElementById('overlay').offsetWidth + 200;
@@ -401,8 +448,8 @@ function centerOnLine(lineMesh) {
 }
 
 function centerGlobal() {
-    
-    const center = window.innerWidth > 800 ? [6.6736, 46.5409] : [6.6322, 46.5192]
+
+    const center = window.innerWidth > MAX_MOBILE_WIDTH ? [6.6736, 46.5409] : [6.6322, 46.5192]
     const zoom = 13
     const pitch = 40
     const bearing = 0
@@ -416,4 +463,196 @@ function centerGlobal() {
     });
 
 
+}
+
+
+function plotLineDelays(linesDelays, optionsLines) {
+    fetch('data/lines.json')
+        .then((response) => response.json())
+        .then((linesData) => {
+            var traces = [];
+
+            var lineName = document.getElementById('lineSelect').value;
+            var day_of_week = document.getElementById('daySelect').value;
+
+            var color = optionsLines.find(line => line.value === lineName).color;
+            var line = linesData.find(line => line.name === lineName);
+
+            var stops = line.stops.sort((a, b) => a[0] - b[0]);
+            var stops_map = {};
+            stops.forEach(function (stop, i) {
+                stops_map[stop[1]] = stop[0];
+            });
+
+
+            var delaysData = linesDelays
+                .filter(feature => feature.properties.line_name == line.name && Number(feature.properties.day_of_week) == day_of_week && stops.map(s => s[1]).includes(feature.properties.stop_id))
+                .sort((a, b) => stops_map[a.properties.stop_id] - stops_map[b.properties.stop_id]);
+
+            // Assuming delaysData is an array with objects containing arrival and departure delay information
+            var arrivalDelays = delaysData.map(delay => delay.properties.arrival_delay);
+            var departureDelays = delaysData.map(delay => delay.properties.departure_delay);
+
+            var arrivalTrace = {
+                x: arrivalDelays,
+                y: stops.map(s => s[2]),
+                type: 'bar',
+                orientation: 'h',
+                name: 'Median Arrival Delay (s)'
+            };
+
+            var departureTrace = {
+                x: departureDelays,
+                y: stops.map(s => s[2]),
+                type: 'bar',
+                orientation: 'h',
+                name: 'Median Departure Delay (s)'
+            };
+
+            traces.push(arrivalTrace, departureTrace);
+
+            // Create a scatter plot trace for each stop to mimic circular ticks
+            stops.map(s => {
+                var tickTrace = {
+                    x: [0],  // position the circle tick at x=0
+                    y: [s[2]],
+                    mode: 'markers',
+                    marker: {
+                        size: 10,  // adjust the size of the circle as per your need
+                        color: color  // adjust the color of the circle as per your need
+                    },
+                    hoverinfo: 'none',  // disable hover for the tick markers
+                    showlegend: false  // do not show these traces in the legend
+                };
+                traces.push(tickTrace);
+            });
+
+            var layout = {
+                height: stops.length * 50,
+                width: document.getElementById('sections').offsetWidth - 20,
+                barmode: 'group', // or 'group', 'overlay', etc. depending on how you want to display multiple traces
+                yaxis: {
+                    dtick: 1, // specify the distance between ticks
+                    automargin: true,
+                    showline: false
+                },
+                legend: {
+                    x: 0,
+                    y: 1.1,
+                    orientation: "h",
+                    xanchor: "center",
+                    yanchor: "top",
+                },
+                shapes: [  // add a vertical line at x=0
+                    {
+                        type: 'line',
+                        x0: 0,
+                        y0: 0,
+                        x1: 0,
+                        y1: stops.length - 1,
+                        line: {
+                            color: color,
+                            width: 3
+                        }
+                    }
+                ]
+
+            };
+
+            Plotly.newPlot('line-delays-plot', traces, layout, { responsive: true });
+
+            window.onresize = function () {
+                Plotly.relayout('line-delays-plot', {
+                    width: document.getElementById('sections').offsetWidth - 20
+                })
+            }
+        })
+}
+
+function removeLinePlot() {
+    Plotly.purge('line-delays-plot');
+}
+
+function updateHeatmap(data) {
+    var selectedHour = document.getElementById('hourSelect-stops').value;
+    var selectedDay = document.getElementById('daySelect-stops').value;
+    var heatmapEnable = document.getElementById('heatmapEnable').checked;
+
+    if (!heatmapEnable) {
+        heatmapLayer.hide()
+        return
+    }
+
+    var filteredData = data.filter(feature => Number(feature.properties.hour) == selectedHour && Number(feature.properties.day_of_week) == selectedDay);
+
+    filteredData = filteredData.map(feature => {
+        return [feature.geometry.coordinates[0], feature.geometry.coordinates[1], feature.properties.activity]
+    })
+
+    heatmapLayer.setData(filteredData);
+    heatmapLayer.show()
+}
+
+function hideHeatmap() {
+    heatmapLayer.hide()
+}
+
+function loadStops() {
+    return new Promise((resolve, reject) => {
+        fetch('data/stops.geojson')
+            .then((response) => response.json())
+            .then((stopsData) => {
+
+                var stopsMesh = {};
+                stopsData.features.forEach(function (feature, i) {
+
+                    const bar = stopsLayer.toBar(feature.geometry.coordinates, {
+                        ...feature.properties,
+                        height: feature.properties.activity * 10,
+                        color: '#005198',
+                        radius: 15
+                    },
+                        new THREE.MeshPhongMaterial({
+                            color: '#005198'
+                        }))
+
+                    var groupKey = Number(feature.properties.day_of_week) + '-' + Number(feature.properties.hour);
+                    if (!stopsMesh[groupKey]) {
+                        stopsMesh[groupKey] = [];
+                    }
+                    stopsMesh[groupKey].push(bar);
+
+                    if (i == stopsData.features.length - 1) {
+                        resolve({
+                            stopsData: stopsData.features,
+                            stopsMesh: stopsMesh
+                        })
+                    }
+                });
+            })
+    })
+}
+
+function showStops(stopsMesh) {
+    var selectedHour = document.getElementById('hourSelect-stops').value;
+    var selectedDay = document.getElementById('daySelect-stops').value;
+
+    for (var key in stopsMesh) {
+        var visible = (key === selectedDay + '-' + selectedHour);
+        stopsMesh[key].forEach(function (geometry) {
+            if (visible) {
+                stopsLayer.addMesh(geometry);
+                return;
+            }
+            stopsLayer.removeMesh(geometry);
+        });
+    }
+}
+
+function hideAllStops(stopsMesh) {
+    for (let key in stopsMesh) {
+        stopsMesh[key].forEach(function (geometry) {
+            stopsLayer.removeMesh(geometry);
+        });
+    }
 }

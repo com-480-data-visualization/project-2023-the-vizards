@@ -3,44 +3,57 @@ var nextButton = document.getElementById("nextButton");
 var prevButton = document.getElementById("prevButton");
 var currentSection = 0;
 
+function openDoors() {
+    document.querySelectorAll(".door").forEach((door) => {
+        door.classList.add("open");
+    });
+}
 
-function createSectionsController(linesMesh, delaysMesh, optionsLines) {
-    function openDoors() {
-        document.querySelectorAll(".door").forEach((door) => {
-            door.classList.add("open");
-        });
-    }
-    
+
+function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData) {
     function updateSections(linesMesh, delaysMesh) {
         switch (currentSection) {
             case 0:
                 showAllLines(linesMesh);
                 hideAllDelay(delaysMesh);
+                handleHighlight(linesMesh, undefined);
+                unhighlightChampionship(optionsLines)
                 centerGlobal();
                 showSection(0)
                 hideButton(prevButton);
                 break;
             case 1:
+                removeLinePlot();
                 hideAllLines(linesMesh);
-                handleHighlight(linesMesh, undefined);
-                unhighlightChampionship(optionsLines)
-                updateVisibilityLine(linesMesh, delaysMesh);
+                showAllLines(linesMesh);
+                hideAllDelay(delaysMesh);
+                centerGlobal();
                 showSection(1)
                 showButton(prevButton);
                 break;
             case 2:
-                showAllLines(linesMesh);
-                hideAllDelay(delaysMesh);
-                centerGlobal();
+                hideAllLines(linesMesh);
+                handleHighlight(linesMesh, undefined);
+                unhighlightChampionship(optionsLines)
+                updateVisibilityLine(linesMesh, delaysMesh);
+                plotLineDelays(delaysData, optionsLines)
                 showSection(2)
                 showButton(nextButton);
+                hideAllStops(stopsMesh);
+                hideHeatmap()
                 break;
             case 3:
+                removeLinePlot();
+                hideAllLines(linesMesh);
+                showAllLines(linesMesh);
+                hideAllDelay(delaysMesh);
                 centerGlobal();
                 handleHighlight(linesMesh, undefined);
                 unhighlightChampionship(optionsLines)
                 showSection(3)
                 hideButton(nextButton);
+                showStops(stopsMesh);
+                updateHeatmap(stopsData);
                 break;
             default:
                 break;
@@ -100,9 +113,9 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines) {
 }
 
 function showButton(element) {
-    element.disabled  = false;
+    element.disabled = false;
 }
 
 function hideButton(element) {
-    element.disabled  = true;
+    element.disabled = true;
 }

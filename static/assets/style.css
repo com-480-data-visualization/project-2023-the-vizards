@@ -4,11 +4,12 @@ body {
     height: 100%;
     width: 100%;
     padding: 0;
+    overflow-x: hidden;
 }
 
-.container {
+#map {
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 #logo {
@@ -22,19 +23,35 @@ body {
 
 #overlay {
     position: absolute;
-    top: 100px;
-    bottom: 100px;
-    right: 100px;
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
     width: 30%;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 10;
     padding: 60px;
     overflow: hidden;
     box-sizing: border-box;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 
-@media screen and (max-width: 800px) {
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+
+@media screen and (max-width: 1500px) {
+    body {
+        font-size: 1.3rem;
+    }
+
     #overlay {
         display: block;
         position: relative;
@@ -51,30 +68,76 @@ body {
 }
 
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
-}
 
-h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-}
 
 #sections {
-    overflow-y: auto;
+    position: relative;
     height: 100%;
     width: 100%;
 }
 
 .section {
+    padding-bottom: 25px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .section.active {
     opacity: 1;
+}
+
+/* Firefox */
+.sections-scroller {
+    scrollbar-width: thin;
+    /* can also be normal, or none, to not render scrollbar */
+    scrollbar-color: currentColor transparent;
+    /* foreground background */
+
+    padding-right: 16px;
+}
+
+/* Webkit / Blink */
+.sections-scroller::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sections-scroller::-webkit-scrollbar-thumb {
+    background-color: currentColor;
+    border-radius: 9999px;
+    /* always round */
+}
+
+.sections-scroller::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+
+#sections::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    /* transparent keyword is broken in Safari */
+}
+
+#sections::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0), white);
+    /* transparent keyword is broken in Safari */
+}
+
+.sections-scroller {
+    overflow-y: scroll;
+    background: white;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -179,10 +242,10 @@ h2 {
 }
 
 .slider-container input[type=range] {
-    position: absolute;
-    left: 20px;
-    right: 5px;
-    bottom: 2em;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: calc(100% - 25px); /* Make the range input full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .slider-container .slider-labels {
@@ -255,9 +318,51 @@ h2 {
     cursor: default;
 }
 
+
+.heatmap-button {
+    width: 100%;
+}
+
+.heatmap-button span {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: #005198;
+    background-color: white;
+    border: #005198 solid 1px;
+}
+
+.heatmap-button span:hover {
+    background-color: #005198;
+    color: white;
+    border-color: #005198;
+    cursor: pointer;
+}
+
+
+
+.heatmap-button input {
+    display: none;
+}
+
+
+.heatmap-button input:checked+span {
+    background-color: #005198;
+    color: white;
+    border-color: #005198;
+}
+
+.heatmap-button input:checked+span:hover {
+    background-color: #005198e5;
+    color: white;
+    border-color: #005198;
+    cursor: pointer;
+}
+
 .door {
     width: 50%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     z-index: 20;
     transition: transform 2s;

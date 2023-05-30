@@ -8,7 +8,7 @@
 <script>
 var xValues = ["Very satisfied", "Satisfied", "Dissatisfied", "No opinion"];
 var yValues = [38.7, 42, 18.7, 0.7];
-var barColors = ["green", "orange","red","blue"];
+var barColors = ["green", "orange","#EC0000","#004E9D"];
 
 new Chart("myChart", {
   type: "horizontalBar",
@@ -27,7 +27,7 @@ new Chart("myChart", {
   
         var ctx = this.chart.ctx;
         
-        ctx.font = Chart.helpers.fontString(14, 'normal', Chart.defaults.global.defaultFontFamily);
+        ctx.font = Chart.helpers.fontString(16, 'normal', Chart.defaults.global.defaultFontFamily);
         ctx.fillStyle = '#000000'
         
         ctx.textAlign = 'center';
@@ -36,7 +36,7 @@ new Chart("myChart", {
             for (var i = 0; i < dataset.data.length; i++) {
                 var model = dataset._meta[Object.keys(dataset._meta)[0]].data[i]._model;
                 if(dataset.data[i] == 38.7){ 
-                  ctx.fillText(dataset.data[i]+"%", model.x-20,model.y +9)}
+                  ctx.fillText(dataset.data[i]+"%", model.x-50,model.y +9)}
                 else if(dataset.data[i] == 0.7){ 
                   ctx.fillText(dataset.data[i]+"%", model.x+20, model.y +9)}  
                 else if(dataset.data[i] == 18.7){ 

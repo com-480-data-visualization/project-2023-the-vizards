@@ -38,7 +38,6 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysDat
                 updateVisibilityLine(linesMesh, delaysMesh);
                 plotLineDelays(delaysData, optionsLines)
                 showSection(2)
-                showButton(nextButton);
                 hideAllStops(stopsMesh);
                 hideHeatmap()
                 break;
@@ -51,9 +50,22 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysDat
                 handleHighlight(linesMesh, undefined);
                 unhighlightChampionship(optionsLines)
                 showSection(3)
-                hideButton(nextButton);
                 showStops(stopsMesh);
                 updateHeatmap(stopsData);
+                break;
+            case 4:
+                showSection(4)
+                hideAllLines(linesMesh);
+                centerGlobal();
+                hideAllStops(stopsMesh);
+                hideHeatmap()
+                showButton(nextButton);
+                break;
+
+            case 5:
+                showSection(5)
+                centerGlobal();
+                hideButton(nextButton);
                 break;
             default:
                 break;

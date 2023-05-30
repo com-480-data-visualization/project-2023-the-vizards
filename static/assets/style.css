@@ -180,11 +180,14 @@ h2 {
     /* Change background color on hover */
 }
 
-#controls button.control-button:hover {
-    background-color: #003f75;
-    /* Change background color on hover */
-}
+@media (hover: hover) {
 
+    #controls button.control-button:hover {
+        background-color: #003f75;
+        /* Change background color on hover */
+    }
+
+}
 
 /* Line Select*/
 #lineSelect option {
@@ -244,8 +247,10 @@ h2 {
 .slider-container input[type=range] {
     margin-left: 20px;
     margin-right: 5px;
-    width: calc(100% - 25px); /* Make the range input full width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: calc(100% - 25px);
+    /* Make the range input full width */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
 }
 
 .slider-container .slider-labels {
@@ -333,14 +338,6 @@ h2 {
     border: #005198 solid 1px;
 }
 
-.heatmap-button span:hover {
-    background-color: #005198;
-    color: white;
-    border-color: #005198;
-    cursor: pointer;
-}
-
-
 
 .heatmap-button input {
     display: none;
@@ -353,11 +350,30 @@ h2 {
     border-color: #005198;
 }
 
-.heatmap-button input:checked+span:hover {
-    background-color: #005198e5;
-    color: white;
-    border-color: #005198;
-    cursor: pointer;
+@media (hover: hover) {
+    .heatmap-button span:hover {
+        background-color: #005198;
+        color: white;
+        border-color: #005198;
+        cursor: pointer;
+    }
+
+    .heatmap-button input:checked+span:hover {
+        background-color: #005198e5;
+        color: white;
+        border-color: #005198;
+        cursor: pointer;
+    }
+}
+
+.doors {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
 }
 
 .door {

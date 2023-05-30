@@ -11,7 +11,7 @@ function openDoors() {
 
 
 function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData) {
-    function updateSections(linesMesh, delaysMesh) {
+    function updateSections() {
         switch (currentSection) {
             case 0:
                 showAllLines(linesMesh);
@@ -109,7 +109,7 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysDat
 
     updateSections(linesMesh, delaysMesh);
 
-    openDoors();
+    
 }
 
 function showButton(element) {

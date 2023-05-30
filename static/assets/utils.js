@@ -656,3 +656,15 @@ function hideAllStops(stopsMesh) {
         });
     }
 }
+
+
+/*
+document.getElementsByClassName('heatmap-button').addEventListener('touchstart', function(e) {
+    var checked = document.getElementById('heatmapEnable').checked;
+    if (checked) {
+        document.getElementById('heatmapEnable').checked = false;
+    } else {
+        document.getElementById('heatmapEnable').checked = true;
+    }
+    updateHeatmap();
+});*/

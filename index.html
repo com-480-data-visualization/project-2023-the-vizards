@@ -198,8 +198,10 @@
     </div>
   </div>
 
-  <div class="door door-left"></div>
-  <div class="door door-right"></div>
+  <div class="doors">
+    <div class="door door-left"></div>
+    <div class="door door-right"></div>
+  </div>
 
   <script src="static/assets/utils.js"></script>
   <script src="static/assets/sections.js"></script>
@@ -287,6 +289,7 @@
               });
 
               createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData);
+              openDoors();
             })
           })
         })

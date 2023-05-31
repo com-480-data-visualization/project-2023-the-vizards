@@ -95,7 +95,7 @@ new Chart("myChart2", {
                             ctx.fillText(dataset.data[i] + "%", model.x + 20, model.y + 9)
                         }
 
-                        else { ctx.fillText(dataset.data[i] + "%", model.x - 10, model.y + 9) };
+                        else { ctx.fillText(dataset.data[i] + "%", model.x - 20, model.y + 9) };
                     }
                 });
             }

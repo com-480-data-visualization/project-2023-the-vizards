@@ -56,7 +56,7 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysDat
             case 4:
                 showSection(4)
                 hideAllLines(linesMesh);
-                centerGlobal();
+                centerEPFL();
                 hideAllStops(stopsMesh);
                 hideHeatmap()
                 showButton(nextButton);
@@ -64,7 +64,7 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysDat
 
             case 5:
                 showSection(5)
-                centerGlobal();
+                centerEPFL();
                 hideButton(nextButton);
                 break;
             default:
@@ -107,16 +107,31 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysDat
     }
 
 
-    nextButton.addEventListener("click", function () {
+    function nextSection() {
         if (currentSection === sections.length - 1) return;
         currentSection = currentSection + 1;
         updateSections(linesMesh, delaysMesh);
-    });
+    }
 
-    prevButton.addEventListener("click", function () {
+    function prevSection() {
         if (currentSection === 0) return;
         currentSection = currentSection - 1;
         updateSections(linesMesh, delaysMesh);
+    }
+
+    nextButton.addEventListener("click", nextSection);
+    prevButton.addEventListener("click", prevSection);
+
+    document.addEventListener('keydown', function (e) {
+        console.log(e)
+        switch (e.key) {
+            case "ArrowLeft":
+                prevSection();
+                break;
+            case "ArrowRight":
+                nextSection();
+                break;
+        }
     });
 
     updateSections(linesMesh, delaysMesh);

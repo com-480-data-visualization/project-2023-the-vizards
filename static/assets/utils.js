@@ -461,8 +461,22 @@ function centerGlobal() {
     }, {
         duration: 500
     });
+}
 
+function centerEPFL() {
 
+    const center = window.innerWidth > MAX_MOBILE_WIDTH ? [6.5712, 46.5205] : [6.5656, 46.5203]
+    const zoom = 16
+    const pitch = 40
+    const bearing = 0
+    map.animateTo({
+        center: center,
+        zoom: zoom,
+        pitch: pitch,
+        bearing: bearing
+    }, {
+        duration: 500
+    });
 }
 
 
@@ -658,7 +672,7 @@ function hideAllStops(stopsMesh) {
 }
 
 
-/*
+
 document.getElementsByClassName('heatmap-button').addEventListener('touchstart', function(e) {
     var checked = document.getElementById('heatmapEnable').checked;
     if (checked) {
@@ -667,7 +681,7 @@ document.getElementsByClassName('heatmap-button').addEventListener('touchstart',
         document.getElementById('heatmapEnable').checked = true;
     }
     updateHeatmap();
-});*/
+});
 
 
 function updateProgress(step) {

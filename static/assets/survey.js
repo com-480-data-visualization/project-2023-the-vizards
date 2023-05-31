@@ -34,7 +34,7 @@ new Chart("myChart1", {
                             ctx.fillText(dataset.data[i] + "%", model.x + 20, model.y + 9)
                         }
 
-                        else { ctx.fillText(dataset.data[i] + "%", model.x - 15, model.y + 9) };
+                        else { ctx.fillText(dataset.data[i] + "%", model.x - 30, model.y + 9) };
                     }
                 });
             }
@@ -95,7 +95,7 @@ new Chart("myChart2", {
                             ctx.fillText(dataset.data[i] + "%", model.x + 20, model.y + 9)
                         }
 
-                        else { ctx.fillText(dataset.data[i] + "%", model.x - 20, model.y + 9) };
+                        else { ctx.fillText(dataset.data[i] + "%", model.x - 35, model.y + 9) };
                     }
                 });
             }
@@ -159,7 +159,7 @@ new Chart("myChart3", {
                         else if (dataset.data[i] == 18.7) {
                             ctx.fillText(dataset.data[i] + "%", model.x - 45, model.y + 9)
                         }
-                        else { ctx.fillText(dataset.data[i] + "%", model.x - 20, model.y + 9) };
+                        else { ctx.fillText(dataset.data[i] + "%", model.x - 30, model.y + 9) };
                     }
                 });
             }

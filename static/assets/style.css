@@ -424,3 +424,17 @@ h2 {
         transform: translateX(100%);
     }
 }
+
+.start-loading-progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+}
+
+.start-loading-progress {
+    height: 25px;
+    width: 0;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    transition: width 0.5s;
+}

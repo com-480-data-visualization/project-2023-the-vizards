@@ -288,12 +288,21 @@
     <div class="door door-right"></div>
   </div>
 
+  <div class="start-loading-progress-bar">
+    <div id="start-loading-progress" class="progress"></div>
+  </div>
+  <img id="start-loading-animation" src="frame1.png" alt="animation" />
+
   <script src="static/assets/utils.js"></script>
   <script src="static/assets/sections.js"></script>
   <script src="static/assets/survey.js"></script>
   <script>
 
     const MAX_MOBILE_WIDTH = 1500;
+
+    var startLoadingProgress = 0;
+    var startLoadingImages = ["static/images/animation/man_1.png", "static/images/animation/man_2.png", "static/images/animation/man_3.png", "static/images/animation/man_4.png"];
+
 
     var map = new maptalks.Map('map', {
       center: window.innerWidth > MAX_MOBILE_WIDTH ? [6.6736, 46.5409] : [6.6322, 46.5192],
@@ -321,10 +330,12 @@
       scene.add(new THREE.AmbientLight('#fff', 0.5));
 
       loadLines().then(function (data) {
+        updateProgress();
         const linesMesh = data.linesMesh;
         const displayableLines = data.displayableLines;
 
         loadDelays().then(function (data) {
+          updateProgress();
           const delaysMesh = data.delaysMesh;
           const linesWithDelays = data.linesWithDelays;
           const delaysData = data.delaysData;
@@ -346,8 +357,9 @@
           });
 
           loadChampionship(linesMesh, optionsLines).then(function () {
-
+            updateProgress();
             loadStops().then(function (data) {
+              updateProgress();
               const stopsData = data.stopsData;
               const stopsMesh = data.stopsMesh;
 
@@ -375,7 +387,9 @@
               });
 
               createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData);
-              openDoors();
+              setTimeout(() => {
+                openDoors();
+              }, 500)
             })
           })
         })

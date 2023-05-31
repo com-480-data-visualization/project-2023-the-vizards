@@ -668,3 +668,10 @@ document.getElementsByClassName('heatmap-button').addEventListener('touchstart',
     }
     updateHeatmap();
 });*/
+
+
+function updateProgress() {
+    startLoadingProgress += 25;
+    document.getElementById('start-loading-progress').style.width = startLoadingProgress + '%';
+    document.getElementById('start-loading-animation').src = startLoadingImages[startLoadingProgress / 25 - 1];
+}

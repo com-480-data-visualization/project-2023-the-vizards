@@ -425,16 +425,51 @@ h2 {
     }
 }
 
-.start-loading-progress-bar {
-    width: 100%;
-    background-color: #f3f3f3;
-    border-radius: 25px;
+#start-progress-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 30;
+    min-width: 25%;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.start-loading-progress {
-    height: 25px;
+#start-progressbar {
+    width: 80%;
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#start-progress {
+    height: 20px;
     width: 0;
-    background-color: #4CAF50;
-    border-radius: 25px;
-    transition: width 0.5s;
+    background: #4caf50;
+    border-radius: 20px;
+}
+
+#start-progress-img {
+    max-height: 100px;
+    max-width: 100px;
+    height: auto;
+    text-align: center;
+}
+
+#start-progress-text {
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#start-progress-container.hidden {
+    opacity: 0;
+    transition: opacity 2s;
 }

@@ -251,10 +251,19 @@
     <div class="door door-right"></div>
   </div>
 
+  <div id="start-progress-container">
+    <img id="start-progress-img" src="static/images/animation/man_1.png" alt="progress image">
+    <div id="start-progressbar">
+      <div id="start-progress"></div>
+    </div>
+    <p id="start-progress-text"></p>
+  </div>
+
   <div class="start-loading-progress-bar">
     <div id="start-loading-progress" class="progress"></div>
   </div>
-  <img id="start-loading-animation" src="frame1.png" alt="animation" />
+
+  <img id="start-loading-animation" src="static/images/animation/man_1.png" alt="animation" />
 
   <script src="static/assets/utils.js"></script>
   <script src="static/assets/sections.js"></script>
@@ -262,10 +271,6 @@
   <script>
 
     const MAX_MOBILE_WIDTH = 1500;
-
-    var startLoadingProgress = 0;
-    var startLoadingImages = ["static/images/animation/man_1.png", "static/images/animation/man_2.png", "static/images/animation/man_3.png", "static/images/animation/man_4.png"];
-
 
     var map = new maptalks.Map('map', {
       center: window.innerWidth > MAX_MOBILE_WIDTH ? [6.6736, 46.5409] : [6.6322, 46.5192],
@@ -293,12 +298,12 @@
       scene.add(new THREE.AmbientLight('#fff', 0.5));
 
       loadLines().then(function (data) {
-        updateProgress();
+        updateProgress(1);
         const linesMesh = data.linesMesh;
         const displayableLines = data.displayableLines;
 
         loadDelays().then(function (data) {
-          updateProgress();
+          updateProgress(2);
           const delaysMesh = data.delaysMesh;
           const linesWithDelays = data.linesWithDelays;
           const delaysData = data.delaysData;
@@ -320,9 +325,9 @@
           });
 
           loadChampionship(linesMesh, optionsLines).then(function () {
-            updateProgress();
+            updateProgress(3);
             loadStops().then(function (data) {
-              updateProgress();
+              updateProgress(4);
               const stopsData = data.stopsData;
               const stopsMesh = data.stopsMesh;
 
@@ -351,7 +356,6 @@
 
               createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData);
               setTimeout(() => {
-                openDoors();
               }, 500)
             })
           })

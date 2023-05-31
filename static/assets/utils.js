@@ -670,8 +670,28 @@ document.getElementsByClassName('heatmap-button').addEventListener('touchstart',
 });*/
 
 
-function updateProgress() {
-    startLoadingProgress += 25;
-    document.getElementById('start-loading-progress').style.width = startLoadingProgress + '%';
-    document.getElementById('start-loading-animation').src = startLoadingImages[startLoadingProgress / 25 - 1];
+function updateProgress(step) {
+    var progressImages = ["static/images/animation/man_1.png", "static/images/animation/man_2.png", "static/images/animation/man_2.png", "static/images/animation/man_3.png"];
+    var progressTexts = ["Loading lines...", "Loading delays...", "Loading championship...", "Loading stops..."];
+
+    var progress = document.getElementById('start-progress');
+    var progressImg = document.getElementById('start-progress-img');
+    var progressText = document.getElementById('start-progress-text');
+
+    var width = (step / progressTexts.length) * 100;
+    progress.style.width = width + '%';
+
+    progressImg.src = progressImages[step - 1]; // Update the image
+    progressText.textContent = progressTexts[step - 1]; // Update the text
+
+    if (width  == 100) {
+        document.getElementById('start-progress-container').classList.add('hidden')
+        setTimeout(function () {
+            document.getElementById('start-progress-container').style.display = 'none';
+        }, 2000)
+
+        setTimeout(function () {
+            openDoors();
+        }, 1200)
+    }
 }

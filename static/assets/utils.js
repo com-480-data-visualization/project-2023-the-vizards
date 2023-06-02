@@ -1,5 +1,5 @@
 
-const DEPARTURE_DELAY_COLOR = "#ff6600"
+const DEPARTURE_DELAY_COLOR = "#d45a08"
 const ARRIVAL_DELAY_COLOR = "#1f77b4"
 
 

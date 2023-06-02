@@ -373,6 +373,7 @@ h2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .door {
@@ -382,7 +383,6 @@ h2 {
     z-index: 20;
     transition: transform 2s;
     top: 0;
-    pointer-events: auto;
 }
 
 .door-left {
@@ -395,10 +395,6 @@ h2 {
     right: 0;
     background: url('../images/right_door.png') no-repeat left center;
     background-size: auto 100%;
-}
-
-.door.open {
-    pointer-events: none;
 }
 
 .door-left.open {
@@ -476,4 +472,5 @@ h2 {
 #start-progress-container.hidden {
     opacity: 0;
     transition: opacity 2s;
+    pointer-events: none;
 }

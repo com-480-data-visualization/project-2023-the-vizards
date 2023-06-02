@@ -40,14 +40,11 @@ new Chart("myChart1", {
             }
         },
 
-
         scales: {
             x: {
-
                 grid: {
                     offset: true
                 }
-
             },
             yValues1: {
                 beginAtZero: true,
@@ -58,8 +55,6 @@ new Chart("myChart1", {
             display: true,
             text: "What do you think about Lausanne' s transports punctuality ?"
         }
-
-
     }
 });
 
@@ -79,10 +74,8 @@ new Chart("myChart2", {
             onComplete: function () {
 
                 var ctx = this.chart.ctx;
-
                 ctx.font = Chart.helpers.fontString(16, 'normal', Chart.defaults.global.defaultFontFamily);
                 ctx.fillStyle = '#000000'
-
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'bottom';
                 this.data.datasets.forEach(function (dataset) {
@@ -104,16 +97,12 @@ new Chart("myChart2", {
 
         scales: {
             x: {
-
                 grid: {
                     offset: true
                 }
-
             },
             yValues2: {
                 beginAtZero: true,
-
-
             }
         },
         legend: { display: false },
@@ -121,8 +110,6 @@ new Chart("myChart2", {
             display: true,
             text: " Is the available transport offer  satisfactory? Is Lausanne well served?"
         }
-
-
     }
 });
 new Chart("myChart3", {
@@ -139,12 +126,9 @@ new Chart("myChart3", {
         animation: {
             duration: 0,
             onComplete: function () {
-
                 var ctx = this.chart.ctx;
-
                 ctx.font = Chart.helpers.fontString(16, 'normal', Chart.defaults.global.defaultFontFamily);
                 ctx.fillStyle = '#000000'
-
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'bottom';
                 this.data.datasets.forEach(function (dataset) {
@@ -165,20 +149,14 @@ new Chart("myChart3", {
             }
         },
 
-
         scales: {
             x: {
-
                 grid: {
                     offset: true
                 }
-
             },
             yValues3: {
                 beginAtZero: true,
-
-
-
             }
         },
         legend: { display: false },
@@ -186,7 +164,5 @@ new Chart("myChart3", {
             display: true,
             text: " What do you think of the Lausanne network connectivity?"
         }
-
-
     }
 });

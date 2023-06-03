@@ -191,13 +191,10 @@ Skeleton of the repo:
 
 - static :
 
-      -  assets : assets used to build the website
-     
-      - images : contains all images used for the assets
-       
-      - survey : contains the viz created for the survey
-      
-     
+    - assets : assets used to build the website
+    - images : contains all images used for the assets
+    - survey : contains the viz created for the survey      
+         
 - index.html
 
 

@@ -177,7 +177,7 @@ To open the website, go to "Github pages" and "View deploiment", or open the lin
 ### Technical setup
 To be able to run the files, you should have the .............. libraries installed.
 
-
+.
 ├── data 
 ├── images
 │   ├── 

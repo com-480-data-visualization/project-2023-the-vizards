@@ -187,7 +187,6 @@ To be able to run the files, you should have the .............. libraries instal
 ├── lines_stops : contains all csv files of bus and subway TL lines
 
 ├── static :
-
 │   ├── assets : assets used to build the website
 
 │   ├── images : contains all images used for the assets

@@ -179,20 +179,13 @@ To be able to run the files, you should have the .............. libraries instal
 
 #
 ├── data 
-
 ├── images  
-
 ├── lines_delays
-
 ├── lines_stops : contains all csv files of bus and subway TL lines
-
 ├── static :
 │   ├── assets : assets used to build the website
-
 │   ├── images : contains all images used for the assets
-
 │   └── survey : contains the viz created for the survey
-
 └── index.html
 #
 

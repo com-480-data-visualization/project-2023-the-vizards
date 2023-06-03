@@ -190,11 +190,13 @@ Skeleton of the repo:
 - milestones_notebooks : contains the ipynb  files wrote for the milestones of the project
 
 - static :
-     ─ assets : assets used to build the website
-     
-    ─ images : contains all images used for the assets
 
-     ─ survey : contains the viz created for the survey
+      -  assets : assets used to build the website
+     
+      - images : contains all images used for the assets
+       
+      - survey : contains the viz created for the survey
+      
      
 - index.html
 

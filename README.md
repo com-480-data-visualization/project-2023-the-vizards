@@ -179,7 +179,9 @@ To be able to run the files, you should have the .............. libraries instal
 
 #
 ├── data 
+
 ├── images  
+
 ├── lines_delays
 ├── lines_stops : contains all csv files of bus and subway TL lines
 ├── static :

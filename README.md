@@ -177,8 +177,26 @@ To open the website, go to "Github pages" and "View deploiment", or open the lin
 ### Technical setup
 To be able to run the files, you should have the .............. libraries installed.
 
+
+├── data 
+├── images
+│   ├── 
+│   ├── 
+│   ├── 
+│   │   
+│   │       
+│   ├── 
+│   ├── 
+│   └── 
+├── lines_delays
+├── lines_stops
+├── static
+└── index.html
+
 ### Intended usage
-This is a project on Lausanne Transportation that aims at presenting data and carry out its analysis in the form of a website in the light of the problematics stated above (see milestone 1). This git repository contains all our work on the data from the beginning to the implementation of the final website. For whom might be interested, here is the code that we wrote for this.
+This is a project on Lausanne Transportation that aims at presenting data and carry out its analysis in the form of a website in the light of the problematics stated above (see milestone 1). This git repository contains all our work on the data from the beginning to the implementation of the final website. For whom might be interested, here is the code that we wrote for that purpose.
+
+
 
 ## Late policy
 

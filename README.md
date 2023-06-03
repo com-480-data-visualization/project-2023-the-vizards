@@ -178,18 +178,26 @@ To open the website, go to "Github pages" and "View deploiment", or open the lin
 To be able to run the files, you should have the .............. libraries installed.
 Skeleton of the repo: 
 
-#
-├── data 
-├── images : images used for diverse task besides the building of the website (milestones reports notably)
-├── lines_delays : contains all csv files of the TLs 'lines delays 
-├── lines_stops : contains all csv files of bus and subway TL lines
-├── milestones_notebooks : contains the ipynb  files wrote for the milestones of the project
-├── static :
-│   ├── assets : assets used to build the website
-│   ├── images : contains all images used for the assets
-│   └── survey : contains the viz created for the survey
-└── index.html
-#
+
+-  data : all  the data used
+
+- images : images used for diverse task besides the building of the website (milestones reports notably)
+
+- lines_delays : contains all csv files of the TLs 'lines delays 
+
+- lines_stops : contains all csv files of bus and subway TL lines
+
+- milestones_notebooks : contains the ipynb  files wrote for the milestones of the project
+
+- static :
+     ─ assets : assets used to build the website
+     
+    ─ images : contains all images used for the assets
+
+     ─ survey : contains the viz created for the survey
+     
+- index.html
+
 
 ### Intended usage
 This is a project on Lausanne Transportation that aims at presenting data and carry out its analysis in the form of a website in the light of the problematics stated above (see milestone 1). This git repository contains all our work on the data from the beginning to the implementation of the final website. For whom might be interested, here is the code that we wrote for that purpose.

@@ -179,9 +179,10 @@ To be able to run the files, you should have the .............. libraries instal
 
 #
 ├── data 
-├── images  
-├── lines_delays
+├── images : images used for diverse task besides the building of the website (milestones reports notably)
+├── lines_delays : contains all csv files of the TLs 'lines delays 
 ├── lines_stops : contains all csv files of bus and subway TL lines
+├── milestones_notebooks : contains the ipynb  files wrote for the milestones of the project
 ├── static :
 │   ├── assets : assets used to build the website
 │   ├── images : contains all images used for the assets

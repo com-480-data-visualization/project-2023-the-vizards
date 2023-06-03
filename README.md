@@ -174,6 +174,9 @@ The process book explaining the whole reflexion behind the website and its inten
 ### Website
 To open the website, go to "Github pages" and "View deploiment", or open the link https://com-480-data-visualization.github.io/project-2023-the-vizards/.
 
+### Screencast
+You can find the screencast that shows what can be done throughout the website here 
+
 ### Technical setup
 To be able to run the files, you should have the .............. libraries installed.
 Skeleton of the repo: 

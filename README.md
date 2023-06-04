@@ -168,6 +168,7 @@ The following libraries were used :
 - [Plotly.js](https://plotly.com/javascript/): create bar plots for the delays of lines
 - [Chart.js](https://www.chartjs.org/): create bar plot for the survey
 There're all delivered by CDN.
+The structure of the repository can be found at the beginning of this README file.
 
 ### Intended usage
 This is a project on Lausanne Transportation that aims at presenting data and carry out its analysis in the form of a website in the light of the problematics stated above (see milestone 1). This git repository contains all our work on the data from the beginning to the implementation of the final website. For whom might be interested, here is the code that we wrote for that purpose.

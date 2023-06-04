@@ -264,8 +264,10 @@
   <script src="static/assets/survey.js"></script>
   <script>
 
+    // Define the maximum width for mobile devices
     const MAX_MOBILE_WIDTH = 1500;
 
+    // Initialize the map with default settings
     var map = new maptalks.Map('map', {
       center: window.innerWidth > MAX_MOBILE_WIDTH ? [6.6736, 46.5409] : [6.6322, 46.5192],
       zoom: 13,
@@ -278,6 +280,7 @@
       })
     });
 
+    // Create layers for three.js objects, heatmap, and stops
     var threeLayer = new maptalks.ThreeLayer('t');
     var heatmapLayer = new maptalks.HeatLayer('heatmap', [], {
       'radius': 32,
@@ -285,25 +288,30 @@
     });
     var stopsLayer = new maptalks.ThreeLayer('stops');
 
+    // Set up the three.js scene
     threeLayer.prepareToDraw = function (gl, scene, camera) {
       var light = new THREE.DirectionalLight(0xffffff);
       light.position.set(0, -10, 10).normalize();
       scene.add(light);
       scene.add(new THREE.AmbientLight('#fff', 0.5));
 
+      // Load lines data and update progress
       loadLines().then(function (data) {
         updateProgress(1);
         const linesMesh = data.linesMesh;
         const displayableLines = data.displayableLines;
 
+        // Load delays data and update progress
         loadDelays().then(function (data) {
           updateProgress(2);
           const delaysMesh = data.delaysMesh;
           const linesWithDelays = data.linesWithDelays;
           const delaysData = data.delaysData;
 
+          // Create line select dropdown and update visibility and delays
           const optionsLines = createLineSelect(displayableLines, linesWithDelays);
 
+          // Handle line and day selection changes
           const lineSelect = document.getElementById('lineSelect');
           const daySelect = document.getElementById('daySelect');
 
@@ -318,13 +326,17 @@
             plotLineDelays(delaysData, optionsLines)
           });
 
+          // Load championship data and update progress
           loadChampionship(linesMesh, optionsLines).then(function () {
             updateProgress(3);
+
+            // Load stops data and update progress
             loadStops().then(function (data) {
               updateProgress(4);
               const stopsData = data.stopsData;
               const stopsMesh = data.stopsMesh;
 
+              // Handle hour and day selection changes for heatmap and stops
               const hourSelect = document.getElementById('hourSelect-stops');
               const daySelect = document.getElementById('daySelect-stops');
 
@@ -344,13 +356,13 @@
                 showStops(stopsMesh)
               });
 
+              // Handle heatmap enable/disable change
               document.getElementById('heatmapEnable').addEventListener('change', function () {
                 updateHeatmap(stopsData)
               });
 
+              // Create sections controller for interaction
               createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData);
-              setTimeout(() => {
-              }, 500)
             })
           })
         })
@@ -358,72 +370,13 @@
 
     };
 
+    // Add layers to the map
     map.addLayer(threeLayer);
     map.addLayer(heatmapLayer);
     map.addLayer(stopsLayer);
-
-    // TOOL TIP //
-    let tooltip = document.createElement('div');
-    tooltip.id = 'tooltip';
-    tooltip.style.position = 'absolute';
-    tooltip.style.backgroundColor = 'white';
-    tooltip.style.border = '1px solid black';
-    tooltip.style.padding = '10px 20px';
-    tooltip.style.display = 'none'; // Hide the tooltip by default
-    tooltip.style.pointerEvents = 'none'; // Make sure the tooltip doesn't block mouse events on the map
-    tooltip.style.borderRadius = '10px';
-    tooltip.style.boxShadow = '2px 2px 6px 0px rgba(0,0,0,0.3)';
-    tooltip.style.marginLeft = '10px';
-    tooltip.style.marginTop = '10px';
-    document.body.appendChild(tooltip);
-
-    function showTooltip(e) {
-      let intersected = threeLayer.identify(e.coordinate);
-      let intersectedStops = stopsLayer.identify(e.coordinate);
-
-      if (intersectedStops && intersectedStops.length > 0) { // STOPS INTERSECTIONS
-
-        intersectedOptions = intersectedStops[0].options
-
-        if ('activity' in intersectedOptions) {
-          tooltip.innerHTML = `<b>${intersectedOptions.stop_name}</b><br>${intersectedOptions.activity} transactions on average`;
-
-        } else {
-          // Hide tooltip if not hovering over a mesh
-          tooltip.style.display = 'none';
-          return
-        }
-      } else if (intersected && intersected.length > 0) { // OTHER INTERSECTIONS
-
-        intersectedOptions = intersected[0].options
-
-        if ('arrival_delay' in intersectedOptions) {
-          tooltip.innerHTML = `<b>${intersectedOptions.stop_name}</b><br>Median arrival delay: ${intersectedOptions.arrival_delay}s`;
-        } else if ('departure_delay' in intersectedOptions) {
-          tooltip.innerHTML = `<b>${intersectedOptions.stop_name}</b><br>Median departure delay: ${intersectedOptions.departure_delay}s`;
-        } else if ('line_name' in intersectedOptions) {
-          tooltip.innerHTML = `<b>Line ${intersectedOptions.line_name}</b>`;
-        } else {
-          // Hide tooltip if not hovering over a mesh
-          tooltip.style.display = 'none';
-          return
-        }
-
-      } else {
-        // Hide tooltip if not hovering over a mesh
-        tooltip.style.display = 'none';
-        return
-      }
-
-      // Show  tooltip
-      tooltip.style.display = 'block';
-      tooltip.style.left = e.containerPoint.x + 'px';
-      tooltip.style.top = e.containerPoint.y + 'px';
-
-    }
-
-    map.on('mousemove', showTooltip);
-    map.on('touchmove', showTooltip);
+    
+    // Handle tooltip for map interactions
+    handleTooltip(map, threeLayer, stopsLayer)
 
   </script>
 </body>

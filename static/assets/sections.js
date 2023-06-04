@@ -4,6 +4,7 @@ var prevButton = document.getElementById("prevButton");
 var currentSection = 0;
 
 function openDoors() {
+    // Function to open the doors by adding the "open" class to all elements with the class "door"
     document.querySelectorAll(".door").forEach((door) => {
         door.classList.add("open");
     });
@@ -11,6 +12,7 @@ function openDoors() {
 
 
 function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysData, stopsMesh, stopsData) {
+     // Function to create a controller for managing different sections of the application
     function updateSections() {
         switch (currentSection) {
             case 0:
@@ -134,15 +136,45 @@ function createSectionsController(linesMesh, delaysMesh, optionsLines, delaysDat
         }
     });
 
+    function showButton(element) {
+        element.disabled = false;
+    }
+    
+    function hideButton(element) {
+        element.disabled = true;
+    }
+
     updateSections(linesMesh, delaysMesh);
 
     
 }
 
-function showButton(element) {
-    element.disabled = false;
-}
+/**
+ * Function to update the progress bar and text.
+ * @param {number} step - Current step in the progress.
+ */
+function updateProgress(step) {
+    var progressImages = ["static/images/animation/man_1.png", "static/images/animation/man_2.png", "static/images/animation/man_2.png", "static/images/animation/man_3.png"];
+    var progressTexts = ["Loading lines...", "Loading delays...", "Loading championship...", "Loading stops..."];
 
-function hideButton(element) {
-    element.disabled = true;
+    var progress = document.getElementById('start-progress');
+    var progressImg = document.getElementById('start-progress-img');
+    var progressText = document.getElementById('start-progress-text');
+
+    var width = (step / progressTexts.length) * 100;
+    progress.style.width = width + '%';
+
+    progressImg.src = progressImages[step - 1]; // Update the image
+    progressText.textContent = progressTexts[step - 1]; // Update the text
+
+    if (width  == 100) {
+        document.getElementById('start-progress-container').classList.add('hidden')
+        setTimeout(function () {
+            document.getElementById('start-progress-container').style.display = 'none';
+        }, 2000)
+
+        setTimeout(function () {
+            openDoors();
+        }, 1200)
+    }
 }

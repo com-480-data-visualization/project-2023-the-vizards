@@ -14,6 +14,7 @@ This repository contains the code for our data visualization project, an interac
 ## Repository Structure
 
 Structure of the repo:
+
     ├── `index.html`
     ├── `data/`
     |   ├─ ─ `raw/`: raw data zip files (gitignored) 

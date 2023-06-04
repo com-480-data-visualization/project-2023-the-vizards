@@ -153,7 +153,7 @@ The forth tab is self-explainatory
 ## Milestone 3 (4th June, 5pm)
 
 ### Process book
-The process book explaining the whole reflexion behind the website and its intended usage can be found [here](), along with the final version of the website. It was inspired from the display on the bus screens, each of the next stops being chapters of the process book.
+The process book explaining the whole reflexion behind the website and its intended usage can be found [here](process_book.pdf), along with the final version of the website. It was inspired from the display on the bus screens, each of the next stops being chapters of the process book.
 
 ### Website
 The website can be found [here](https://com-480-data-visualization.github.io/project-2023-the-vizards/)

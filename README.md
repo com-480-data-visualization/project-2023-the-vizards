@@ -14,25 +14,24 @@ This repository contains the code for our data visualization project, an interac
 ## Repository Structure
 
 Structure of the repo:
-
-    ├── `index.html`
-    ├── `data/`
-    |   ├─ ─ `raw/`: raw data zip files (gitignored) 
-    |   ├── `lines_delays/`: all csv files of the TL lines delays
-    |   ├── `lines_stops/`: all csv files of bus and subway TL lines
-    |   ├── `activities.csv`: activity per stop per day of week per hour
-    |   ├── `bav_list_current_timetable.xlsx`: raw data of all stops in Switzerland
-    |   ├── `championship.json`: processed data for the lines championship
-    |   ├── `col_bus.txt`: color per line collected from https://t-l.ch
-    |   ├── `final_lines.geojson`: geojson for each line
-    |   ├── `lines.json`: list of stops (with order) per line
-    |   ├── `lines_delays.geojson`: geojson of delays per stop per line
-    |   └── `stops.geojson`: geojson of activity per stop
-    ├── `images/`: images used for diverse task besides the building of the website (milestones reports notably)
-    ├── `notebooks/`: ipynb  files wrote for the milestones of the project
-    └── `static/`
-        ├── `assets/`: css and js assets
-        └── `images/`: all images used for the website
+- `index.html`
+- :file_folder: `data`
+  - :file_folder: `raw`: raw data zip files (gitignored) 
+  - :file_folder: `lines_delays`: all csv files of the TL lines delays
+  - :file_folder: `lines_stops`: all csv files of bus and subway TL lines
+  - `activities.csv`: activity per stop per day of week per hour
+  - `bav_list_current_timetable.xlsx`: raw data of all stops in Switzerland
+  - `championship.json`: processed data for the lines championship
+  - `col_bus.txt`: color per line collected from https://t-l.ch
+  - `final_lines.geojson`: geojson for each line
+  - `lines.json`: list of stops (with order) per line
+  - `lines_delays.geojson`: geojson of delays per stop per line
+  - `stops.geojson`: geojson of activity per stop
+- :file_folder: `images`: images used for diverse task besides the building of the website (milestones reports notably)
+- :file_folder: `notebooks`: ipynb  files wrote for the milestones of the project
+- :file_folder: `static`
+  - :file_folder: `assets`: css and js assets
+  - :file_folder: `images`: all images used for the website
 
 ## Milestone 1 (23rd April, 5pm)
 ### Dataset
